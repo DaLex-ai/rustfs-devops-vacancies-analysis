@@ -1,0 +1,49 @@
+=== REGIONAL DEVOPS ANALYSIS ===
+Source: s3://hh-lake/raw/vacancies.csv
+
+=== REGIONAL SALARY TABLE ===
+Москва: total=3007, with_skills=2015, net_RUB_n=406, median=250000.0 RUB, full_range_n=161, full_range_median=250000.0 RUB, coverage=13.5%
+Санкт-Петербург: total=686, with_skills=488, net_RUB_n=103, median=220000.0 RUB, full_range_n=36, full_range_median=227500.0 RUB, coverage=15.01%
+Новосибирск: total=160, with_skills=123, net_RUB_n=41, median=165000.0 RUB, full_range_n=15, full_range_median=40000.0 RUB, coverage=25.63%
+Uploaded: s3://hh-lake/results/regions/regional_summary.csv
+
+=== REGIONAL SKILLS TABLE ===
+
+Stack 1: 30 ranked rows
+Москва | rank=1 | Linux | vacancies=1210 | share=40.24%
+Москва | rank=2 | Kubernetes | vacancies=1085 | share=36.08%
+Москва | rank=3 | Docker | vacancies=980 | share=32.59%
+Новосибирск | rank=1 | Linux | vacancies=86 | share=53.75%
+Новосибирск | rank=2 | Docker | vacancies=70 | share=43.75%
+Новосибирск | rank=3 | Kubernetes | vacancies=70 | share=43.75%
+Санкт-Петербург | rank=1 | Linux | vacancies=299 | share=43.59%
+Санкт-Петербург | rank=2 | Docker | vacancies=274 | share=39.94%
+Санкт-Петербург | rank=3 | Kubernetes | vacancies=252 | share=36.73%
+
+Stack 2: 30 ranked rows
+Москва | rank=1 | Docker + Kubernetes | vacancies=681 | share=22.65%
+Москва | rank=2 | Kubernetes + Linux | vacancies=650 | share=21.62%
+Москва | rank=3 | Docker + Linux | vacancies=630 | share=20.95%
+Новосибирск | rank=1 | Docker + Linux | vacancies=54 | share=33.75%
+Новосибирск | rank=2 | Kubernetes + Linux | vacancies=54 | share=33.75%
+Новосибирск | rank=3 | Docker + Kubernetes | vacancies=53 | share=33.12%
+Санкт-Петербург | rank=1 | Docker + Kubernetes | vacancies=173 | share=25.22%
+Санкт-Петербург | rank=2 | Docker + Linux | vacancies=172 | share=25.07%
+Санкт-Петербург | rank=3 | Kubernetes + Linux | vacancies=153 | share=22.3%
+
+Stack 3: 30 ranked rows
+Москва | rank=1 | Docker + Kubernetes + Linux | vacancies=425 | share=14.13%
+Москва | rank=2 | DevOps + Docker + Kubernetes | vacancies=320 | share=10.64%
+Москва | rank=3 | DevOps + Kubernetes + Linux | vacancies=314 | share=10.44%
+Новосибирск | rank=1 | Docker + Kubernetes + Linux | vacancies=44 | share=27.5%
+Новосибирск | rank=2 | Ansible + Docker + Kubernetes | vacancies=27 | share=16.88%
+Новосибирск | rank=3 | Ansible + Docker + Linux | vacancies=27 | share=16.88%
+Санкт-Петербург | rank=1 | Docker + Kubernetes + Linux | vacancies=109 | share=15.89%
+Санкт-Петербург | rank=2 | Ansible + Docker + Linux | vacancies=91 | share=13.27%
+Санкт-Петербург | rank=3 | Ansible + Docker + Kubernetes | vacancies=86 | share=12.54%
+
+Uploaded: s3://hh-lake/results/regions/regional_top_skills.csv
+
+=== FINAL ===
+Elapsed: 8.875 s
+REGIONAL ANALYSIS COMPLETED

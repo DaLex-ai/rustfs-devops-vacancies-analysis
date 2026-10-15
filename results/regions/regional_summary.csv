@@ -1,0 +1,4 @@
+﻿region,total_vacancies,with_skills,salary_any,net_rub_n,median_net_rub,full_range_n,full_range_median,salary_coverage_pct
+Москва,3007,2015,573,406,250000.0,161,250000.0,13.5
+Новосибирск,160,123,48,41,165000.0,15,40000.0,25.63
+Санкт-Петербург,686,488,161,103,220000.0,36,227500.0,15.01

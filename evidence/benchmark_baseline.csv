@@ -1,0 +1,7 @@
+﻿method,attempt,compute_s,wall_s,peak_working_set_mib
+mapreduce,1,11.783,12.872,87.91
+duckdb,1,9.752,10.771,1298.08
+duckdb,2,9.433,10.417,1298.09
+mapreduce,2,11.483,12.541,87.97
+mapreduce,3,11.332,12.428,87.77
+duckdb,3,9.356,10.421,1297.89

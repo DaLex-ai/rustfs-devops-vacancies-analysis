@@ -1,0 +1,180 @@
+Compute benchmark: RustFS / S3
+DuckDB threads: 1
+Warm-up excluded from summary
+Peak memory: Windows peak working set reported by worker
+
+=== warmup: mapreduce ===
+Exit code: 0
+=== S3 CONNECTION ===
+Connection: OK
+Buckets: ['hh-lake', 'it-vacancies']
+
+=== SOURCE DATA ===
+Object: it-vacancies/vacancies.csv
+Size: 847619384 bytes
+Size check: OK
+
+=== TARGET BUCKET ===
+Bucket already exists: hh-lake
+Bucket check: OK
+
+=== RESULT ===
+Storage verification: SUCCESS
+CORE_SECONDS=10.894281
+PEAK_WORKING_SET_MIB=87.996
+BENCHMARK_OK
+
+
+=== warmup: duckdb ===
+Exit code: 0
+=== S3 CONNECTION ===
+Connection: OK
+Buckets: ['hh-lake', 'it-vacancies']
+
+=== SOURCE DATA ===
+Object: it-vacancies/vacancies.csv
+Size: 847619384 bytes
+Size check: OK
+
+=== TARGET BUCKET ===
+Bucket already exists: hh-lake
+Bucket check: OK
+
+=== RESULT ===
+Storage verification: SUCCESS
+CORE_SECONDS=9.741489
+PEAK_WORKING_SET_MIB=1298.176
+BENCHMARK_OK
+
+
+=== run1: mapreduce ===
+Exit code: 0
+=== S3 CONNECTION ===
+Connection: OK
+Buckets: ['hh-lake', 'it-vacancies']
+
+=== SOURCE DATA ===
+Object: it-vacancies/vacancies.csv
+Size: 847619384 bytes
+Size check: OK
+
+=== TARGET BUCKET ===
+Bucket already exists: hh-lake
+Bucket check: OK
+
+=== RESULT ===
+Storage verification: SUCCESS
+CORE_SECONDS=11.782933
+PEAK_WORKING_SET_MIB=87.914
+BENCHMARK_OK
+
+
+=== run1: duckdb ===
+Exit code: 0
+=== S3 CONNECTION ===
+Connection: OK
+Buckets: ['hh-lake', 'it-vacancies']
+
+=== SOURCE DATA ===
+Object: it-vacancies/vacancies.csv
+Size: 847619384 bytes
+Size check: OK
+
+=== TARGET BUCKET ===
+Bucket already exists: hh-lake
+Bucket check: OK
+
+=== RESULT ===
+Storage verification: SUCCESS
+CORE_SECONDS=9.752184
+PEAK_WORKING_SET_MIB=1298.078
+BENCHMARK_OK
+
+
+=== run2: duckdb ===
+Exit code: 0
+=== S3 CONNECTION ===
+Connection: OK
+Buckets: ['hh-lake', 'it-vacancies']
+
+=== SOURCE DATA ===
+Object: it-vacancies/vacancies.csv
+Size: 847619384 bytes
+Size check: OK
+
+=== TARGET BUCKET ===
+Bucket already exists: hh-lake
+Bucket check: OK
+
+=== RESULT ===
+Storage verification: SUCCESS
+CORE_SECONDS=9.433348
+PEAK_WORKING_SET_MIB=1298.094
+BENCHMARK_OK
+
+
+=== run2: mapreduce ===
+Exit code: 0
+=== S3 CONNECTION ===
+Connection: OK
+Buckets: ['hh-lake', 'it-vacancies']
+
+=== SOURCE DATA ===
+Object: it-vacancies/vacancies.csv
+Size: 847619384 bytes
+Size check: OK
+
+=== TARGET BUCKET ===
+Bucket already exists: hh-lake
+Bucket check: OK
+
+=== RESULT ===
+Storage verification: SUCCESS
+CORE_SECONDS=11.482830
+PEAK_WORKING_SET_MIB=87.969
+BENCHMARK_OK
+
+
+=== run3: mapreduce ===
+Exit code: 0
+=== S3 CONNECTION ===
+Connection: OK
+Buckets: ['hh-lake', 'it-vacancies']
+
+=== SOURCE DATA ===
+Object: it-vacancies/vacancies.csv
+Size: 847619384 bytes
+Size check: OK
+
+=== TARGET BUCKET ===
+Bucket already exists: hh-lake
+Bucket check: OK
+
+=== RESULT ===
+Storage verification: SUCCESS
+CORE_SECONDS=11.331952
+PEAK_WORKING_SET_MIB=87.773
+BENCHMARK_OK
+
+
+=== run3: duckdb ===
+Exit code: 0
+=== S3 CONNECTION ===
+Connection: OK
+Buckets: ['hh-lake', 'it-vacancies']
+
+=== SOURCE DATA ===
+Object: it-vacancies/vacancies.csv
+Size: 847619384 bytes
+Size check: OK
+
+=== TARGET BUCKET ===
+Bucket already exists: hh-lake
+Bucket check: OK
+
+=== RESULT ===
+Storage verification: SUCCESS
+CORE_SECONDS=9.356222
+PEAK_WORKING_SET_MIB=1297.887
+BENCHMARK_OK
+

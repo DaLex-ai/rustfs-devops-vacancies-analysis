@@ -1,0 +1,88 @@
+=== DEVOPS SALARY INSIGHTS ===
+DuckDB: 1.5.6
+Source: s3://hh-lake/raw/vacancies.csv
+
+=== ANALYSIS COHORT ===
+All DevOps vacancies: 5158
+Comparable RUB net salaries: 762
+Comparable salaries with skills: 564
+
+=== SALARY REPRESENTATION ===
+lower_only: 289
+midpoint: 292
+upper_only: 181
+Overall median salary proxy: 210,000 RUB
+
+=== SALARY GROUPS ===
+Stack 1: 564 groups with salary
+Uploaded: s3://hh-lake/results/salary/salary_1.csv
+Stack 2: 7526 groups with salary
+Uploaded: s3://hh-lake/results/salary/salary_2.csv
+Stack 3: 51778 groups with salary
+Uploaded: s3://hh-lake/results/salary/salary_3.csv
+
+=== COMPARISON WITH BASELINE ===
+All effects stack 2: 7526
+Uploaded: s3://hh-lake/results/salary/effects_2.csv
+
+=== STACK 2: ELIGIBLE COMBINATIONS ===
+Minimum group n=10, baseline n=15
+Eligible combinations: 440
+
+TOP POSITIVE STACK 2
+Apache Kafka + Linux | n=10 | median=300,000 RUB | baseline=Linux | base_n=365 | base_median=200,000 | delta=+100,000 RUB (+50.0%)
+DevOps + Docker-compose | n=11 | median=300,000 RUB | baseline=DevOps | base_n=251 | base_median=200,000 | delta=+100,000 RUB (+50.0%)
+DevOps + Nexus | n=11 | median=300,000 RUB | baseline=DevOps | base_n=251 | base_median=200,000 | delta=+100,000 RUB (+50.0%)
+GitLab CI + Linux | n=15 | median=300,000 RUB | baseline=Linux | base_n=365 | base_median=200,000 | delta=+100,000 RUB (+50.0%)
+Kubernetes + OpenShift | n=12 | median=350,000 RUB | baseline=Kubernetes | base_n=291 | base_median=250,000 | delta=+100,000 RUB (+40.0%)
+Linux + Nexus | n=11 | median=300,000 RUB | baseline=Linux | base_n=365 | base_median=200,000 | delta=+100,000 RUB (+50.0%)
+DevOps + Terraform | n=44 | median=287,500 RUB | baseline=DevOps | base_n=251 | base_median=200,000 | delta=+87,500 RUB (+43.8%)
+Docker + Английский язык | n=14 | median=300,000 RUB | baseline=Docker | base_n=352 | base_median=215,000 | delta=+85,000 RUB (+39.5%)
+Terraform + Zabbix | n=24 | median=270,000 RUB | baseline=Zabbix | base_n=116 | base_median=200,000 | delta=+70,000 RUB (+35.0%)
+Gitlab + СУБД | n=10 | median=312,500 RUB | baseline=Gitlab | base_n=114 | base_median=250,000 | delta=+62,500 RUB (+25.0%)
+
+TOP NEGATIVE STACK 2
+Ansible + Atlassian Jira | n=10 | median=125,000 RUB | baseline=Ansible | base_n=199 | base_median=250,000 | delta=-125,000 RUB (-50.0%)
+PostgreSQL + СУБД | n=15 | median=125,000 RUB | baseline=PostgreSQL | base_n=199 | base_median=250,000 | delta=-125,000 RUB (-50.0%)
+Kubernetes + PHP | n=10 | median=142,500 RUB | baseline=Kubernetes | base_n=291 | base_median=250,000 | delta=-107,500 RUB (-43.0%)
+Apache HTTP Server + Nginx | n=12 | median=100,000 RUB | baseline=Nginx | base_n=150 | base_median=200,000 | delta=-100,000 RUB (-50.0%)
+Debian + Linux | n=17 | median=100,000 RUB | baseline=Linux | base_n=365 | base_median=200,000 | delta=-100,000 RUB (-50.0%)
+Debian + Администрирование серверов Linux | n=10 | median=100,000 RUB | baseline=Администрирование серверов Linux | base_n=95 | base_median=200,000 | delta=-100,000 RUB (-50.0%)
+Docker-compose + Git | n=11 | median=100,000 RUB | baseline=Git | base_n=140 | base_median=200,000 | delta=-100,000 RUB (-50.0%)
+Grafana + PHP | n=12 | median=155,000 RUB | baseline=Grafana | base_n=169 | base_median=250,000 | delta=-95,000 RUB (-38.0%)
+PostgreSQL + Английский язык | n=10 | median=155,000 RUB | baseline=PostgreSQL | base_n=199 | base_median=250,000 | delta=-95,000 RUB (-38.0%)
+Ansible + Golang | n=12 | median=157,500 RUB | baseline=Ansible | base_n=199 | base_median=250,000 | delta=-92,500 RUB (-37.0%)
+All effects stack 3: 51778
+Uploaded: s3://hh-lake/results/salary/effects_3.csv
+
+=== STACK 3: ELIGIBLE COMBINATIONS ===
+Minimum group n=8, baseline n=15
+Eligible combinations: 2226
+
+TOP POSITIVE STACK 3
+Git + Gitlab + Python | n=17 | median=350,000 RUB | baseline=Git + Python | base_n=53 | base_median=180,000 | delta=+170,000 RUB (+94.4%)
+Git + GitLab CI + Linux | n=9 | median=360,000 RUB | baseline=Git + Linux | base_n=117 | base_median=200,000 | delta=+160,000 RUB (+80.0%)
+CI/CD + ELK + Python | n=13 | median=350,000 RUB | baseline=CI/CD + Python | base_n=53 | base_median=200,000 | delta=+150,000 RUB (+75.0%)
+CI/CD + Grafana + Удаленная работа | n=8 | median=350,000 RUB | baseline=CI/CD + Grafana | base_n=54 | base_median=200,000 | delta=+150,000 RUB (+75.0%)
+CI/CD + Python + Zabbix | n=15 | median=350,000 RUB | baseline=CI/CD + Python | base_n=53 | base_median=200,000 | delta=+150,000 RUB (+75.0%)
+CI/CD + Python + Удаленная работа | n=8 | median=350,000 RUB | baseline=CI/CD + Python | base_n=53 | base_median=200,000 | delta=+150,000 RUB (+75.0%)
+DevOps + Linux + Мониторинг | n=8 | median=350,000 RUB | baseline=DevOps + Linux | base_n=182 | base_median=200,000 | delta=+150,000 RUB (+75.0%)
+DevOps + Linux + Удаленная работа | n=8 | median=350,000 RUB | baseline=DevOps + Linux | base_n=182 | base_median=200,000 | delta=+150,000 RUB (+75.0%)
+Ansible + Git + GitLab CI | n=8 | median=360,000 RUB | baseline=Ansible + Git | base_n=68 | base_median=212,500 | delta=+147,500 RUB (+69.4%)
+DevOps + Grafana + Мониторинг | n=9 | median=350,000 RUB | baseline=DevOps + Grafana | base_n=90 | base_median=205,000 | delta=+145,000 RUB (+70.7%)
+
+TOP NEGATIVE STACK 3
+Docker-compose + Linux + Prometheus | n=8 | median=100,000 RUB | baseline=Linux + Prometheus | base_n=104 | base_median=250,000 | delta=-150,000 RUB (-60.0%)
+Bash + Debian + Linux | n=8 | median=100,000 RUB | baseline=Bash + Linux | base_n=120 | base_median=235,000 | delta=-135,000 RUB (-57.4%)
+Ansible + Atlassian Jira + Linux | n=8 | median=125,000 RUB | baseline=Ansible + Linux | base_n=141 | base_median=250,000 | delta=-125,000 RUB (-50.0%)
+Ansible + Atlassian Jira + Prometheus | n=8 | median=125,000 RUB | baseline=Ansible + Prometheus | base_n=84 | base_median=250,000 | delta=-125,000 RUB (-50.0%)
+Ansible + PostgreSQL + Английский язык | n=9 | median=125,000 RUB | baseline=Ansible + PostgreSQL | base_n=84 | base_median=250,000 | delta=-125,000 RUB (-50.0%)
+Ansible + Python + Английский язык | n=9 | median=125,000 RUB | baseline=Ansible + Python | base_n=69 | base_median=250,000 | delta=-125,000 RUB (-50.0%)
+Atlassian Jira + DevOps + Prometheus | n=8 | median=125,000 RUB | baseline=DevOps + Prometheus | base_n=80 | base_median=250,000 | delta=-125,000 RUB (-50.0%)
+Atlassian Jira + Linux + Prometheus | n=8 | median=125,000 RUB | baseline=Linux + Prometheus | base_n=104 | base_median=250,000 | delta=-125,000 RUB (-50.0%)
+Jenkins + PostgreSQL + SQL | n=9 | median=100,000 RUB | baseline=Jenkins + PostgreSQL | base_n=37 | base_median=225,000 | delta=-125,000 RUB (-55.6%)
+Kubernetes + PostgreSQL + Английский язык | n=9 | median=125,000 RUB | baseline=Kubernetes + PostgreSQL | base_n=113 | base_median=250,000 | delta=-125,000 RUB (-50.0%)
+
+=== FINAL ===
+Elapsed: 19.705 s
+SALARY ANALYSIS COMPLETED

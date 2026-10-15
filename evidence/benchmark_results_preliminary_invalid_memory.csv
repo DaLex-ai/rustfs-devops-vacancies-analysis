@@ -1,0 +1,7 @@
+﻿method,attempt,compute_s,wall_s,peak_rss_mib
+mapreduce,1,14.461,15.28,4.11
+duckdb,1,10.126,11.057,4.11
+duckdb,2,9.911,11.007,4.08
+mapreduce,2,14.451,15.546,4.07
+mapreduce,3,13.244,14.202,4.08
+duckdb,3,9.31,10.229,4.07

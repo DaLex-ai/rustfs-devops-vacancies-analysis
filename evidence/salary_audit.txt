@@ -1,0 +1,46 @@
+=== DEVOPS SALARY AUDIT ===
+DevOps vacancies: 5158
+Vacancies with salary: 1111
+Vacancies without salary: 4047
+
+=== SALARY BOUNDS ===
+both: 435
+only_from: 398
+only_to: 278
+missing_both: 4047
+
+=== CURRENCIES ===
+RUR: 1037
+USD: 53
+EUR: 20
+BYR: 1
+
+=== GROSS FOR RUR/RUB ===
+false: 762
+true: 275
+
+=== VALID RUB SALARIES ===
+Valid RUR/RUB rows: 1037
+Valid RUR/RUB rows with skills: 731
+
+=== DATA QUALITY PROBLEMS ===
+No invalid positive salary bounds found
+
+=== TOP 15 REGIONS ===
+Москва: total=3007, salary_any=573, valid_RUB=523, gross_false=406, gross_true=117, gross_empty=0
+Санкт-Петербург: total=686, salary_any=161, valid_RUB=147, gross_false=103, gross_true=44, gross_empty=0
+Екатеринбург: total=188, salary_any=41, valid_RUB=41, gross_false=34, gross_true=7, gross_empty=0
+Новосибирск: total=160, salary_any=48, valid_RUB=45, gross_false=41, gross_true=4, gross_empty=0
+Казань: total=130, salary_any=28, valid_RUB=28, gross_false=14, gross_true=14, gross_empty=0
+Нижний Новгород: total=116, salary_any=19, valid_RUB=19, gross_false=9, gross_true=10, gross_empty=0
+Ростов-на-Дону: total=74, salary_any=18, valid_RUB=18, gross_false=14, gross_true=4, gross_empty=0
+Самара: total=71, salary_any=16, valid_RUB=16, gross_false=7, gross_true=9, gross_empty=0
+Томск: total=51, salary_any=16, valid_RUB=16, gross_false=14, gross_true=2, gross_empty=0
+Краснодар: total=48, salary_any=16, valid_RUB=16, gross_false=11, gross_true=5, gross_empty=0
+Воронеж: total=43, salary_any=13, valid_RUB=13, gross_false=9, gross_true=4, gross_empty=0
+Ижевск: total=32, salary_any=3, valid_RUB=2, gross_false=0, gross_true=2, gross_empty=0
+Пермь: total=32, salary_any=6, valid_RUB=6, gross_false=4, gross_true=2, gross_empty=0
+Челябинск: total=26, salary_any=12, valid_RUB=12, gross_false=8, gross_true=4, gross_empty=0
+Омск: total=24, salary_any=1, valid_RUB=1, gross_false=0, gross_true=1, gross_empty=0
+
+SALARY AUDIT COMPLETED

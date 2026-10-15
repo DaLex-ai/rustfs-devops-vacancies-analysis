@@ -1,0 +1,35 @@
+=== NOVOSIBIRSK SALARY AUDIT ===
+Total Novosibirsk DevOps vacancies: 160
+Comparable RUB net salaries: 41
+
+=== SALARY TYPES ===
+lower_only: n=15, min=100,000, median=200,000, max=350,000 RUB
+midpoint: n=15, min=40,000, median=40,000, max=345,000 RUB
+upper_only: n=11, min=60,000, median=170,000, max=350,000 RUB
+
+=== MEDIAN VALIDATION ===
+Overall median: 165,000 RUB
+Full-range records: 15
+Full-range median: 40,000 RUB
+CONTROL VALUES: PASSED
+
+=== ALL FULL-RANGE VACANCIES ===
+ID=102477742 | Младший системный администратор / junior DevOps / junior IT-архитектор | experience=Нет опыта | from=30,000 | to=50,000 | proxy=40,000
+ID=104404108 | Младший системный администратор / junior DevOps / junior IT-архитектор | experience=Нет опыта | from=30,000 | to=50,000 | proxy=40,000
+ID=106580487 | Младший системный администратор / junior DevOps / junior IT-архитектор | experience=Нет опыта | from=30,000 | to=50,000 | proxy=40,000
+ID=90498799 | Младший системный администратор / junior DevOps / junior IT-архитектор | experience=Нет опыта | from=30,000 | to=50,000 | proxy=40,000
+ID=91820073 | Младший системный администратор / junior DevOps / junior IT-архитектор | experience=Нет опыта | from=30,000 | to=50,000 | proxy=40,000
+ID=93401528 | Младший системный администратор / junior DevOps / junior IT-архитектор | experience=Нет опыта | from=30,000 | to=50,000 | proxy=40,000
+ID=95103157 | Младший системный администратор / junior DevOps / junior IT-архитектор | experience=Нет опыта | from=30,000 | to=50,000 | proxy=40,000
+ID=97488252 | Младший системный администратор / junior DevOps / junior IT-архитектор | experience=Нет опыта | from=30,000 | to=50,000 | proxy=40,000
+ID=99531642 | Младший системный администратор / junior DevOps / junior IT-архитектор | experience=Нет опыта | from=30,000 | to=50,000 | proxy=40,000
+ID=93525261 | Junior DevOps | experience=От 1 года до 3 лет | from=150,000 | to=180,000 | proxy=165,000
+ID=95465803 | SRE Engineer | experience=От 3 до 6 лет | from=200,000 | to=260,000 | proxy=230,000
+ID=106187369 | DevOps Engineer | experience=От 3 до 6 лет | from=200,000 | to=300,000 | proxy=250,000
+ID=91551497 | Tech Lead DevOps | experience=От 3 до 6 лет | from=250,000 | to=380,000 | proxy=315,000
+ID=93252797 | DevOps - инженер | experience=От 3 до 6 лет | from=250,000 | to=380,000 | proxy=315,000
+ID=92575402 | Senior DevOps специалист | experience=От 3 до 6 лет | from=280,000 | to=410,000 | proxy=345,000
+
+=== FINAL ===
+Salary calculations reproduced from source CSV
+NOVOSIBIRSK AUDIT PASSED

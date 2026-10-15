@@ -1,0 +1,43 @@
+=== MAPREDUCE DEVOPS ===
+S3 source: s3://hh-lake/raw/vacancies.csv
+Mapper chunk size: 250 vacancies
+Mapper 1: 250 rows | Total: 250
+Mapper 2: 250 rows | Total: 500
+Mapper 3: 250 rows | Total: 750
+Mapper 4: 250 rows | Total: 1000
+Mapper 5: 250 rows | Total: 1250
+Mapper 6: 250 rows | Total: 1500
+Mapper 7: 250 rows | Total: 1750
+Mapper 8: 250 rows | Total: 2000
+Mapper 9: 250 rows | Total: 2250
+Mapper 10: 250 rows | Total: 2500
+Mapper 11: 250 rows | Total: 2750
+Mapper 12: 250 rows | Total: 3000
+Mapper 13: 250 rows | Total: 3250
+Mapper 14: 250 rows | Total: 3500
+Mapper 15: 250 rows | Total: 3750
+Mapper 16: 250 rows | Total: 4000
+Mapper 17: 250 rows | Total: 4250
+Mapper 18: 250 rows | Total: 4500
+Mapper 19: 250 rows | Total: 4750
+Mapper 20: 250 rows | Total: 5000
+Mapper 21: 158 rows | Total: 5158
+
+=== CONTROL VALUES ===
+DevOps vacancies: 5158
+Vacancies with skills: 3534
+Mapper executions: 21
+Stack 1: 1560 unique combinations, 28344 occurrences
+Stack 2: 22311 unique combinations, 134786 occurrences
+Stack 3: 152803 unique combinations, 507851 occurrences
+
+CONTROL CHECK: PASSED
+
+=== UPLOAD RESULTS TO RUSTFS ===
+Uploaded s3://hh-lake/results/mapreduce/skills_1.csv (33091 bytes)
+Uploaded s3://hh-lake/results/mapreduce/skills_2.csv (685676 bytes)
+Uploaded s3://hh-lake/results/mapreduce/skills_3.csv (6063651 bytes)
+
+=== FINAL RESULT ===
+Elapsed time: 10.743 seconds
+MAPREDUCE COMPLETED SUCCESSFULLY

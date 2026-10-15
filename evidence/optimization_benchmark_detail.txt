@@ -1,0 +1,195 @@
+Optimization experiment: original vs curated input
+Three measured runs per method, plus warm-up
+Peak memory: Windows process peak working set
+
+=== original, attempt=warmup ===
+Return code: 0
+=== S3 CONNECTION ===
+Connection: OK
+Buckets: ['hh-lake', 'it-vacancies']
+
+=== SOURCE DATA ===
+Object: it-vacancies/vacancies.csv
+Size: 847619384 bytes
+Size check: OK
+
+=== TARGET BUCKET ===
+Bucket already exists: hh-lake
+Bucket check: OK
+
+=== RESULT ===
+Storage verification: SUCCESS
+CORE_SECONDS=9.927558
+PEAK_WORKING_SET_MIB=88.215
+BENCHMARK_OK
+
+
+=== optimized, attempt=warmup ===
+Return code: 0
+=== S3 CONNECTION ===
+Connection: OK
+Buckets: ['hh-lake', 'it-vacancies']
+
+=== SOURCE DATA ===
+Object: it-vacancies/vacancies.csv
+Size: 847619384 bytes
+Size check: OK
+
+=== TARGET BUCKET ===
+Bucket already exists: hh-lake
+Bucket check: OK
+
+=== RESULT ===
+Storage verification: SUCCESS
+=== OPTIMIZED MAPREDUCE ===
+Stack 1: 1560 unique, 28344 occurrences
+Stack 2: 22311 unique, 134786 occurrences
+Stack 3: 152803 unique, 507851 occurrences
+CORE_SECONDS=0.488212
+PEAK_WORKING_SET_MIB=85.715
+BENCHMARK_OK
+
+
+=== original, attempt=1 ===
+Return code: 0
+=== S3 CONNECTION ===
+Connection: OK
+Buckets: ['hh-lake', 'it-vacancies']
+
+=== SOURCE DATA ===
+Object: it-vacancies/vacancies.csv
+Size: 847619384 bytes
+Size check: OK
+
+=== TARGET BUCKET ===
+Bucket already exists: hh-lake
+Bucket check: OK
+
+=== RESULT ===
+Storage verification: SUCCESS
+CORE_SECONDS=11.700939
+PEAK_WORKING_SET_MIB=88.125
+BENCHMARK_OK
+
+
+=== optimized, attempt=1 ===
+Return code: 0
+=== S3 CONNECTION ===
+Connection: OK
+Buckets: ['hh-lake', 'it-vacancies']
+
+=== SOURCE DATA ===
+Object: it-vacancies/vacancies.csv
+Size: 847619384 bytes
+Size check: OK
+
+=== TARGET BUCKET ===
+Bucket already exists: hh-lake
+Bucket check: OK
+
+=== RESULT ===
+Storage verification: SUCCESS
+=== OPTIMIZED MAPREDUCE ===
+Stack 1: 1560 unique, 28344 occurrences
+Stack 2: 22311 unique, 134786 occurrences
+Stack 3: 152803 unique, 507851 occurrences
+CORE_SECONDS=0.737431
+PEAK_WORKING_SET_MIB=85.922
+BENCHMARK_OK
+
+
+=== optimized, attempt=2 ===
+Return code: 0
+=== S3 CONNECTION ===
+Connection: OK
+Buckets: ['hh-lake', 'it-vacancies']
+
+=== SOURCE DATA ===
+Object: it-vacancies/vacancies.csv
+Size: 847619384 bytes
+Size check: OK
+
+=== TARGET BUCKET ===
+Bucket already exists: hh-lake
+Bucket check: OK
+
+=== RESULT ===
+Storage verification: SUCCESS
+=== OPTIMIZED MAPREDUCE ===
+Stack 1: 1560 unique, 28344 occurrences
+Stack 2: 22311 unique, 134786 occurrences
+Stack 3: 152803 unique, 507851 occurrences
+CORE_SECONDS=0.740252
+PEAK_WORKING_SET_MIB=85.746
+BENCHMARK_OK
+
+
+=== original, attempt=2 ===
+Return code: 0
+=== S3 CONNECTION ===
+Connection: OK
+Buckets: ['hh-lake', 'it-vacancies']
+
+=== SOURCE DATA ===
+Object: it-vacancies/vacancies.csv
+Size: 847619384 bytes
+Size check: OK
+
+=== TARGET BUCKET ===
+Bucket already exists: hh-lake
+Bucket check: OK
+
+=== RESULT ===
+Storage verification: SUCCESS
+CORE_SECONDS=11.730363
+PEAK_WORKING_SET_MIB=88.461
+BENCHMARK_OK
+
+
+=== original, attempt=3 ===
+Return code: 0
+=== S3 CONNECTION ===
+Connection: OK
+Buckets: ['hh-lake', 'it-vacancies']
+
+=== SOURCE DATA ===
+Object: it-vacancies/vacancies.csv
+Size: 847619384 bytes
+Size check: OK
+
+=== TARGET BUCKET ===
+Bucket already exists: hh-lake
+Bucket check: OK
+
+=== RESULT ===
+Storage verification: SUCCESS
+CORE_SECONDS=12.744359
+PEAK_WORKING_SET_MIB=87.715
+BENCHMARK_OK
+
+
+=== optimized, attempt=3 ===
+Return code: 0
+=== S3 CONNECTION ===
+Connection: OK
+Buckets: ['hh-lake', 'it-vacancies']
+
+=== SOURCE DATA ===
+Object: it-vacancies/vacancies.csv
+Size: 847619384 bytes
+Size check: OK
+
+=== TARGET BUCKET ===
+Bucket already exists: hh-lake
+Bucket check: OK
+
+=== RESULT ===
+Storage verification: SUCCESS
+=== OPTIMIZED MAPREDUCE ===
+Stack 1: 1560 unique, 28344 occurrences
+Stack 2: 22311 unique, 134786 occurrences
+Stack 3: 152803 unique, 507851 occurrences
+CORE_SECONDS=0.534936
+PEAK_WORKING_SET_MIB=86.727
+BENCHMARK_OK
+

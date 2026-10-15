@@ -1,0 +1,7 @@
+﻿method,attempt,compute_seconds,wall_seconds,peak_working_set_mib
+original,1,11.701,12.56,88.12
+optimized,1,0.737,1.748,85.92
+optimized,2,0.74,1.845,85.75
+original,2,11.73,12.691,88.46
+original,3,12.744,13.67,87.72
+optimized,3,0.535,1.422,86.73

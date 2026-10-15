@@ -1,0 +1,38 @@
+=== OPTIMIZATION BENCHMARK ===
+Source: RustFS S3
+Original: raw/vacancies.csv
+Optimized: curated/devops_skills.csv
+Preparation cost: 10.055 s
+
+=== WARM-UP ===
+original   | attempt=warmup | compute=   9.928s | wall=  10.723s | peak=   88.22 MiB
+optimized  | attempt=warmup | compute=   0.488s | wall=   1.319s | peak=   85.72 MiB
+
+=== MEASURED RUNS ===
+original   | attempt=1      | compute=  11.701s | wall=  12.560s | peak=   88.12 MiB
+optimized  | attempt=1      | compute=   0.737s | wall=   1.748s | peak=   85.92 MiB
+optimized  | attempt=2      | compute=   0.740s | wall=   1.845s | peak=   85.75 MiB
+original   | attempt=2      | compute=  11.730s | wall=  12.691s | peak=   88.46 MiB
+original   | attempt=3      | compute=  12.744s | wall=  13.670s | peak=   87.72 MiB
+optimized  | attempt=3      | compute=   0.535s | wall=   1.422s | peak=   86.73 MiB
+
+=== SUMMARY ===
+original: median=11.730s, mean=12.058s, max_peak=88.46 MiB
+optimized: median=0.737s, mean=0.671s, max_peak=86.73 MiB
+
+=== IMPROVEMENT ===
+Speedup: 15.92x
+Time reduction: 93.72%
+Peak memory change: -1.96%
+
+=== PREPARATION BREAK-EVEN ===
+Preparation: 10.055s
+Median savings per run: 10.993s
+Break-even: 1 calculation(s)
+
+=== OUTPUT FILES ===
+C:\rustfs-lab\devops-hw\evidence\optimization_benchmark_runs.csv
+C:\rustfs-lab\devops-hw\evidence\optimization_benchmark_detail.txt
+C:\rustfs-lab\devops-hw\evidence\optimization_benchmark_summary.txt
+
+OPTIMIZATION BENCHMARK COMPLETED

@@ -1,0 +1,27 @@
+=== DUCKDB DEVOPS ===
+DuckDB version: 1.5.6
+S3 authentication: configured
+Source: s3://hh-lake/raw/vacancies.csv
+
+=== PREPARING DATA ===
+DevOps vacancies: 5158
+Vacancies with skills: 3534
+
+=== SQL COUNTS AND VERIFICATION ===
+Stack 1: 1560 unique, 28344 occurrences
+Comparison stack 1: missing=0, extra=0, different_counts=0
+Stack 1: EXACT MATCH
+Uploaded: s3://hh-lake/results/duckdb/skills_1.csv
+Stack 2: 22311 unique, 134786 occurrences
+Comparison stack 2: missing=0, extra=0, different_counts=0
+Stack 2: EXACT MATCH
+Uploaded: s3://hh-lake/results/duckdb/skills_2.csv
+Stack 3: 152803 unique, 507851 occurrences
+Comparison stack 3: missing=0, extra=0, different_counts=0
+Stack 3: EXACT MATCH
+Uploaded: s3://hh-lake/results/duckdb/skills_3.csv
+
+=== FINAL RESULT ===
+All three levels matched MapReduce exactly
+Elapsed time: 13.482 seconds
+DUCKDB VERIFICATION PASSED

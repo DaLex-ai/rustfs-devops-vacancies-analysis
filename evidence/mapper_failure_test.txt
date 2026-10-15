@@ -1,0 +1,30 @@
+=== MAPREDUCE FAILURE RECOVERY TEST ===
+Injected failure: mapper 5
+Maximum mapper attempts: 2
+Failure moment: after Map, before Reduce
+MAPPER 5 FAILED on attempt 1: Injected failure after map calculation
+Retrying mapper 5...
+MAPPER 5 RECOVERED on attempt 2
+
+=== RECOVERY RESULTS ===
+Mapper chunks processed: 21
+DevOps vacancies processed: 5158
+Vacancies with skills: 3534
+Recovered mapper chunks: 1
+
+=== EXACT REFERENCE VERIFICATION ===
+Stack 1: EXACT MATCH | 1560 unique | 28344 occurrences
+Stack 2: EXACT MATCH | 22311 unique | 134786 occurrences
+Stack 3: EXACT MATCH | 152803 unique | 507851 occurrences
+
+=== PERMANENT FAILURE TEST ===
+MAPPER 999 FAILED on attempt 1: Permanent injected mapper failure
+Retrying mapper 999...
+MAPPER 999 FAILED on attempt 2: Permanent injected mapper failure
+Permanent mapper failure detected
+Retry limit enforced: YES
+Unsuccessful mapper result not committed
+
+=== FINAL RESULT ===
+Elapsed time: 10.092 seconds
+FAILURE RECOVERY TEST PASSED

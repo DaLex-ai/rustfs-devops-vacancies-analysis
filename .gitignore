@@ -1,0 +1,34 @@
+﻿# Python environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Local backups
+*_backup.py
+*.bak
+
+# Large datasets
+dataset/
+vacancies.csv
+results/optimized/devops_skills.csv
+
+# IDE and system files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+*.log
