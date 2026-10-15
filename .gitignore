@@ -32,3 +32,8 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.log
+
+# RustFS local storage
+infra/disk*/
+infra/data/
+infra/logs/

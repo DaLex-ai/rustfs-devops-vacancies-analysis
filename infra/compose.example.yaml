@@ -1,0 +1,41 @@
+services:
+  rustfs:
+    image: rustfs/rustfs:1.0.0
+    container_name: rustfs-server
+
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+
+    environment:
+      RUSTFS_VOLUMES: "/data/rustfs{0...3}"
+      RUSTFS_ADDRESS: "0.0.0.0:9000"
+      RUSTFS_CONSOLE_ADDRESS: "0.0.0.0:9001"
+      RUSTFS_CONSOLE_ENABLE: "true"
+
+      RUSTFS_ACCESS_KEY: ${RUSTFS_ACCESS_KEY:?Set_RUSTFS_ACCESS_KEY}
+      RUSTFS_SECRET_KEY: ${RUSTFS_SECRET_KEY:?Set_RUSTFS_SECRET_KEY}
+
+      RUSTFS_ERASURE_SET_DRIVE_COUNT: "4"
+      RUSTFS_STORAGE_CLASS_STANDARD: "EC:2"
+
+      RUSTFS_UNSAFE_BYPASS_DISK_CHECK: "true"
+
+      RUSTFS_OBS_LOGGER_LEVEL: "info"
+      RUSTFS_OBS_LOG_DIRECTORY: "/app/logs"
+
+    volumes:
+      - ./disk1:/data/rustfs0
+      - ./disk2:/data/rustfs1
+      - ./disk3:/data/rustfs2
+      - ./disk4:/data/rustfs3
+      - ./logs:/app/logs
+
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:9000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 20s
