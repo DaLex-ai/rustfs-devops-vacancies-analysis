@@ -1,0 +1,33 @@
+{"event": "START", "fencing": 0, "run": "no_fencing_20261026_070321", "session_timeout_sec": 10, "utc": "2026-10-26T07:03:18.117+00:00", "worker": "a"}
+{"event": "SESSION_STATE", "state": "CONNECTED", "utc": "2026-10-26T07:03:18.177+00:00", "worker": "a"}
+{"candidate": "candidate-0000000000", "event": "ELECTION_JOIN", "initial_pointer_version": 0, "utc": "2026-10-26T07:03:18.248+00:00", "worker": "a"}
+{"candidate": "candidate-0000000000", "epoch": 1, "event": "ROLE_LEADER", "utc": "2026-10-26T07:03:18.266+00:00", "worker": "a"}
+{"event": "RESUMED_FROM_CHECKPOINT", "existing_pairs": 0, "next_chunk": 0, "utc": "2026-10-26T07:03:18.276+00:00", "worker": "a"}
+{"chunk": 1, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:03:18.309+00:00", "worker": "a"}
+{"chunk": 2, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:03:18.920+00:00", "worker": "a"}
+{"chunk": 3, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:03:19.544+00:00", "worker": "a"}
+{"chunk": 4, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:03:20.186+00:00", "worker": "a"}
+{"chunk": 5, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:03:20.825+00:00", "worker": "a"}
+{"event": "SESSION_STATE", "state": "SUSPENDED", "utc": "2026-10-26T07:04:01.039+00:00", "worker": "a"}
+{"event": "SESSION_STATE", "state": "LOST", "utc": "2026-10-26T07:04:01.057+00:00", "worker": "a"}
+{"chunk": 6, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:04:01.089+00:00", "worker": "a"}
+{"event": "SESSION_STATE", "state": "CONNECTED", "utc": "2026-10-26T07:04:01.089+00:00", "worker": "a"}
+{"chunk": 7, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:04:01.716+00:00", "worker": "a"}
+{"chunk": 8, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:04:08.791+00:00", "worker": "a"}
+{"chunk": 9, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:04:09.409+00:00", "worker": "a"}
+{"chunk": 10, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:04:10.011+00:00", "worker": "a"}
+{"chunk": 11, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:04:10.637+00:00", "worker": "a"}
+{"chunk": 12, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:04:11.248+00:00", "worker": "a"}
+{"chunk": 13, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:04:11.904+00:00", "worker": "a"}
+{"chunk": 14, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:04:12.530+00:00", "worker": "a"}
+{"chunk": 15, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:04:13.132+00:00", "worker": "a"}
+{"chunk": 16, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:04:13.772+00:00", "worker": "a"}
+{"chunk": 17, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:04:14.392+00:00", "worker": "a"}
+{"chunk": 18, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:04:15.016+00:00", "worker": "a"}
+{"chunk": 19, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:04:15.645+00:00", "worker": "a"}
+{"chunk": 20, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:04:16.270+00:00", "worker": "a"}
+{"chunk": 21, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:04:16.959+00:00", "worker": "a"}
+{"event": "EXACT_MATCH", "file": "/app/results/no_fencing_20261026_070321/pairs_a.csv", "occurrences": 134786, "sha256": "507ddca2a76248d13464ed4ce6b92c6a1ccce8e5094b93ad20c0aa0c35355aa2", "unique": 22311, "utc": "2026-10-26T07:04:17.709+00:00", "worker": "a"}
+{"epoch": 1, "event": "PUBLISHED_RESULT", "pointer_version": 2, "utc": "2026-10-26T07:04:17.739+00:00", "worker": "a"}
+{"event": "FINISHED", "utc": "2026-10-26T07:04:17.745+00:00", "worker": "a"}
+{"event": "SESSION_STATE", "state": "LOST", "utc": "2026-10-26T07:04:17.752+00:00", "worker": "a"}

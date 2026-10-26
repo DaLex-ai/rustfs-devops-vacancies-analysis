@@ -1,0 +1,37 @@
+{
+  "run": "no_fencing_20261026_070321",
+  "fencing": 0,
+  "failover_seconds": 9.125,
+  "failover_clock": "Windows host monotonic seconds (includes poll latency <= 0.45 s)",
+  "standby_checkpoint_chunk": 5,
+  "successful_publications": 2,
+  "expected_version": 2,
+  "pointer": "EPOCH VALUE 2 VERSION 2\nPOINTER VALUE {\"owner\": \"a\", \"epoch\": 1, \"sha256\": \"507ddca2a76248d13464ed4ce6b92c6a1ccce8e5094b93ad20c0aa0c35355aa2\", \"unique_pairs\": 22311, \"occurrences\": 134786, \"utc\": \"2026-10-26T07:04:17.718+00:00\"} VERSION 2\nCANDIDATES []",
+  "timeline": [
+    {
+      "utc": "2026-10-26T07:03:21.506+00:00",
+      "event": "EXPERIMENT_START",
+      "mode": "no-fencing",
+      "run": "no_fencing_20261026_070321"
+    },
+    {
+      "utc": "2026-10-26T07:03:27.489+00:00",
+      "event": "PAUSE_A"
+    },
+    {
+      "utc": "2026-10-26T07:03:29.331+00:00",
+      "event": "TAKEOVER_B",
+      "epoch": 2
+    },
+    {
+      "utc": "2026-10-26T07:03:36.613+00:00",
+      "event": "TAKEOVER_OBSERVED_ON_HOST",
+      "source_container_utc": "2026-10-26T07:03:29.331+00:00"
+    },
+    {
+      "utc": "2026-10-26T07:04:07.489+00:00",
+      "event": "UNPAUSE_A"
+    }
+  ],
+  "status": "PASSED"
+}

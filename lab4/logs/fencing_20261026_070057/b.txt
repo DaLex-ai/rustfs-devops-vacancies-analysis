@@ -1,0 +1,25 @@
+{"event": "START", "fencing": 1, "run": "fencing_20261026_070057", "session_timeout_sec": 10, "utc": "2026-10-26T07:00:55.716+00:00", "worker": "b"}
+{"event": "SESSION_STATE", "state": "CONNECTED", "utc": "2026-10-26T07:00:55.780+00:00", "worker": "b"}
+{"candidate": "candidate-0000000001", "event": "ELECTION_JOIN", "initial_pointer_version": 0, "utc": "2026-10-26T07:00:55.804+00:00", "worker": "b"}
+{"candidate": "candidate-0000000001", "epoch": 2, "event": "ROLE_LEADER", "utc": "2026-10-26T07:01:04.309+00:00", "worker": "b"}
+{"event": "RESUMED_FROM_CHECKPOINT", "existing_pairs": 8445, "next_chunk": 5, "utc": "2026-10-26T07:01:04.336+00:00", "worker": "b"}
+{"chunk": 6, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:01:04.391+00:00", "worker": "b"}
+{"chunk": 7, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:01:05.021+00:00", "worker": "b"}
+{"chunk": 8, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:01:05.637+00:00", "worker": "b"}
+{"chunk": 9, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:01:06.265+00:00", "worker": "b"}
+{"chunk": 10, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:01:06.432+00:00", "worker": "b"}
+{"chunk": 11, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:01:07.083+00:00", "worker": "b"}
+{"chunk": 12, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:01:07.705+00:00", "worker": "b"}
+{"chunk": 13, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:01:08.387+00:00", "worker": "b"}
+{"chunk": 14, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:01:09.084+00:00", "worker": "b"}
+{"chunk": 15, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:01:09.741+00:00", "worker": "b"}
+{"chunk": 16, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:01:10.450+00:00", "worker": "b"}
+{"chunk": 17, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:01:11.170+00:00", "worker": "b"}
+{"chunk": 18, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:01:11.323+00:00", "worker": "b"}
+{"chunk": 19, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:01:11.994+00:00", "worker": "b"}
+{"chunk": 20, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:01:12.672+00:00", "worker": "b"}
+{"chunk": 21, "event": "CHUNK_DONE", "total_chunks": 21, "utc": "2026-10-26T07:01:13.183+00:00", "worker": "b"}
+{"event": "EXACT_MATCH", "file": "/app/results/fencing_20261026_070057/pairs_b.csv", "occurrences": 134786, "sha256": "507ddca2a76248d13464ed4ce6b92c6a1ccce8e5094b93ad20c0aa0c35355aa2", "unique": 22311, "utc": "2026-10-26T07:01:13.959+00:00", "worker": "b"}
+{"epoch": 2, "event": "PUBLISHED_RESULT", "pointer_version": 1, "utc": "2026-10-26T07:01:13.978+00:00", "worker": "b"}
+{"event": "FINISHED", "utc": "2026-10-26T07:01:13.985+00:00", "worker": "b"}
+{"event": "SESSION_STATE", "state": "LOST", "utc": "2026-10-26T07:01:13.994+00:00", "worker": "b"}
