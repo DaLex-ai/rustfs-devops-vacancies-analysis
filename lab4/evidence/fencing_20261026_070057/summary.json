@@ -1,0 +1,31 @@
+{
+  "run": "fencing_20261026_070057",
+  "fencing": 1,
+  "failover_seconds": 0.832,
+  "standby_checkpoint_chunk": 5,
+  "successful_publications": 1,
+  "expected_version": 1,
+  "pointer": "EPOCH VALUE 2 VERSION 2\nPOINTER VALUE {\"owner\": \"b\", \"epoch\": 2, \"sha256\": \"507ddca2a76248d13464ed4ce6b92c6a1ccce8e5094b93ad20c0aa0c35355aa2\", \"unique_pairs\": 22311, \"occurrences\": 134786, \"utc\": \"2026-10-26T07:01:13.966+00:00\"} VERSION 1\nCANDIDATES []",
+  "timeline": [
+    {
+      "utc": "2026-10-26T07:00:57.607+00:00",
+      "event": "EXPERIMENT_START",
+      "mode": "fencing",
+      "run": "fencing_20261026_070057"
+    },
+    {
+      "utc": "2026-10-26T07:01:03.477+00:00",
+      "event": "PAUSE_A"
+    },
+    {
+      "utc": "2026-10-26T07:01:04.309+00:00",
+      "event": "TAKEOVER_B",
+      "epoch": 2
+    },
+    {
+      "utc": "2026-10-26T07:01:43.477+00:00",
+      "event": "UNPAUSE_A"
+    }
+  ],
+  "status": "PASSED"
+}

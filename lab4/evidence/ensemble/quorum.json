@@ -1,0 +1,55 @@
+[
+  {
+    "utc": "2026-10-26T06:58:07.639747+00:00",
+    "step": "all_three",
+    "roles": {
+      "1": "follower",
+      "2": "leader",
+      "3": "follower"
+    },
+    "probe": {
+      "returncode": 0,
+      "stdout": "CLIENT_WRITE_READ_OK /lab4/quorum/probe-0000000002\n",
+      "stderr": ""
+    }
+  },
+  {
+    "step": "one_follower_down",
+    "stopped": 1,
+    "roles": {
+      "1": "unreachable: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение",
+      "2": "leader",
+      "3": "follower"
+    },
+    "probe": {
+      "returncode": 0,
+      "stdout": "CLIENT_WRITE_READ_OK /lab4/quorum/probe-0000000003\n",
+      "stderr": "Cannot resolve zk1: [Errno -5] No address associated with hostname\n"
+    }
+  },
+  {
+    "step": "two_followers_down",
+    "stopped": [
+      1,
+      3
+    ],
+    "roles": {
+      "1": "unreachable: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение",
+      "2": "unknown",
+      "3": "unreachable: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение"
+    },
+    "probe": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Cannot resolve zk1: [Errno -5] No address associated with hostname\nCannot resolve zk3: [Errno -5] No address associated with hostname\nTraceback (most recent call last):\n  File \"/app/zk_probe.py\", line 16, in <module>\n    z.start(timeout=7)\n  File \"/usr/local/lib/python3.11/site-packages/kazoo/client.py\", line 669, in start\n    raise self.handler.timeout_exception(\"Connection time-out\")\nkazoo.handlers.threading.KazooTimeoutError: Connection time-out\n\n"
+    }
+  },
+  {
+    "step": "restored",
+    "roles": {
+      "1": "follower",
+      "2": "follower",
+      "3": "leader"
+    }
+  }
+]
