@@ -1,0 +1,83 @@
+{
+  "checks": {
+    "migration_hash_and_size": true,
+    "pvc_survives_pod_replacement": true,
+    "measure_pods_completed": true,
+    "safe_pods_completed": true,
+    "split_pods_completed": true,
+    "map_pods_completed": true,
+    "reduce_pods_completed": true,
+    "oom_confirmed_without_retry": true,
+    "all_pairs_exact_three_way_match": true,
+    "pair_totals": true,
+    "top10_exact_match": true,
+    "all_records_covered": true,
+    "each_shard_integrity": true,
+    "three_distinct_indexed_pods": true,
+    "real_parallel_compute": true,
+    "cpu_wait_then_completion": true,
+    "scheduler_preempted_event": true,
+    "quota_admission_reject_and_recovery": true,
+    "system_pods_healthy": true,
+    "rustfs_ready": true,
+    "node_ready_no_pressure": true,
+    "no_credentials_in_new_text_files": true
+  },
+  "passed": true,
+  "failed_checks": [],
+  "exposed_files": [],
+  "top10": [
+    [
+      "Docker",
+      "Kubernetes",
+      1221
+    ],
+    [
+      "Docker",
+      "Linux",
+      1190
+    ],
+    [
+      "Kubernetes",
+      "Linux",
+      1143
+    ],
+    [
+      "Ansible",
+      "Linux",
+      863
+    ],
+    [
+      "DevOps",
+      "Linux",
+      825
+    ],
+    [
+      "DevOps",
+      "Kubernetes",
+      800
+    ],
+    [
+      "DevOps",
+      "Docker",
+      798
+    ],
+    [
+      "Ansible",
+      "Docker",
+      774
+    ],
+    [
+      "Ansible",
+      "Kubernetes",
+      756
+    ],
+    [
+      "Linux",
+      "Python",
+      738
+    ]
+  ],
+  "rubric_available": false,
+  "note": "Checks cover approved specification, not an unavailable original grading rubric."
+}

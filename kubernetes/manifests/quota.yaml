@@ -1,0 +1,17 @@
+{
+  "apiVersion": "v1",
+  "kind": "ResourceQuota",
+  "metadata": {
+    "name": "budget",
+    "namespace": "devops-quota"
+  },
+  "spec": {
+    "hard": {
+      "requests.cpu": "500m",
+      "requests.memory": "128Mi",
+      "limits.cpu": "1",
+      "limits.memory": "256Mi",
+      "pods": "3"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "allocatable_millicpu": 16000,
+  "reserved_millicpu": 1200,
+  "free_requests_millicpu": 14800,
+  "note": "Scheduler capacity and outer Docker 4-CPU execution quota are different quantities."
+}

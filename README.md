@@ -1,4 +1,4 @@
-﻿# Анализ IT-вакансий: RustFS, MapReduce и DuckDB
+# Анализ IT-вакансий: RustFS, MapReduce и DuckDB
 
 **Домашняя работа № 3**
 
@@ -193,3 +193,17 @@ raw/vacancies.csv.
 Пример конфигурации предназначен для отдельного стенда.
 Запуск рядом с существующим RustFS на тех же портах
 9000 и 9001 приведёт к конфликту.
+
+
+## Kubernetes: ресурсы и параллельная обработка
+
+Продолжение проекта: RustFS внутри Kubernetes, параллельный MapReduce,
+OOMKilled, CPU scheduling, PriorityClass/preemption и ResourceQuota.
+
+- [Инструкция и ограничения стенда](kubernetes/README.md)
+- [Манифесты](kubernetes/manifests/)
+- [Доказательства запуска 30.10.2026](kubernetes/evidence/20261030-01/)
+- [Редактируемый DOCX-отчёт](kubernetes/report/Kubernetes_DevOps_Aleshkin_J3311.docx)
+- [Итоговый PDF-отчёт](kubernetes/report/Kubernetes_DevOps_Aleshkin_J3311.pdf)
+
+ДЗ №3 и работа с ZooKeeper в `lab4/` сохранены.

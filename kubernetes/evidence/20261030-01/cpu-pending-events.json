@@ -1,0 +1,170 @@
+{
+  "apiVersion": "v1",
+  "items": [
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:09:04Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "name": "cpu-blocker-20261030-01",
+        "namespace": "devops-scheduling",
+        "resourceVersion": "1599",
+        "uid": "e4d90248-2eea-4926-8a72-0d4766a46242"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:09:04Z",
+      "message": "Successfully assigned devops-scheduling/cpu-blocker-20261030-01 to devops-k8s-control-plane",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:09:04Z",
+        "name": "cpu-blocker-20261030-01.18e353eada8fbda5",
+        "namespace": "devops-scheduling",
+        "resourceVersion": "1601",
+        "uid": "60d81db8-2e5e-4c0c-9fc3-fe1d4ab13c35"
+      },
+      "reason": "Scheduled",
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": "",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:09:05Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{task}",
+        "kind": "Pod",
+        "name": "cpu-blocker-20261030-01",
+        "namespace": "devops-scheduling",
+        "resourceVersion": "1600",
+        "uid": "e4d90248-2eea-4926-8a72-0d4766a46242"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:09:05Z",
+      "message": "Container image \"devops-mapreduce:k8s\" already present on machine and can be accessed by the pod",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:09:05Z",
+        "name": "cpu-blocker-20261030-01.18e353eafa75015f",
+        "namespace": "devops-scheduling",
+        "resourceVersion": "1603",
+        "uid": "4d449403-606b-4f37-9d8d-e88c5ec9ed04"
+      },
+      "reason": "Pulled",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:09:05Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{task}",
+        "kind": "Pod",
+        "name": "cpu-blocker-20261030-01",
+        "namespace": "devops-scheduling",
+        "resourceVersion": "1600",
+        "uid": "e4d90248-2eea-4926-8a72-0d4766a46242"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:09:05Z",
+      "message": "Container created",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:09:05Z",
+        "name": "cpu-blocker-20261030-01.18e353eafc312686",
+        "namespace": "devops-scheduling",
+        "resourceVersion": "1604",
+        "uid": "6216cb15-e79b-4799-84d1-7acae32c281d"
+      },
+      "reason": "Created",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:09:05Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{task}",
+        "kind": "Pod",
+        "name": "cpu-blocker-20261030-01",
+        "namespace": "devops-scheduling",
+        "resourceVersion": "1600",
+        "uid": "e4d90248-2eea-4926-8a72-0d4766a46242"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:09:05Z",
+      "message": "Container started",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:09:05Z",
+        "name": "cpu-blocker-20261030-01.18e353eb0340d6e6",
+        "namespace": "devops-scheduling",
+        "resourceVersion": "1605",
+        "uid": "6c14e19b-4eae-439d-9d7e-ce43ed099152"
+      },
+      "reason": "Started",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:09:04Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "name": "cpu-waiter-20261030-01",
+        "namespace": "devops-scheduling",
+        "resourceVersion": "1610",
+        "uid": "883279d1-b73c-44ae-91ca-fce3bde685c1"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:09:04Z",
+      "message": "0/1 nodes are available: 1 Insufficient cpu. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:09:04Z",
+        "name": "cpu-waiter-20261030-01.18e353eadb408071",
+        "namespace": "devops-scheduling",
+        "resourceVersion": "1611",
+        "uid": "90056057-bd14-473a-8c13-b58d17efe302"
+      },
+      "reason": "FailedScheduling",
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": "",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "type": "Warning"
+    }
+  ],
+  "kind": "List",
+  "metadata": {
+    "resourceVersion": ""
+  }
+}

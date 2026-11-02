@@ -1,0 +1,93 @@
+Name:             rustfs-0
+Namespace:        devops-compute
+Priority:         0
+Service Account:  default
+Node:             devops-k8s-control-plane/172.26.0.2
+Start Time:       Fri, 30 Oct 2026 17:05:41 +0300
+Labels:           app=rustfs
+                  apps.kubernetes.io/pod-index=0
+                  controller-revision-hash=rustfs-84c74c44c9
+                  statefulset.kubernetes.io/pod-name=rustfs-0
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.10
+IPs:
+  IP:           10.244.0.10
+Controlled By:  StatefulSet/rustfs
+Containers:
+  rustfs:
+    Container ID:   containerd://150487b07baa9ccbde4709339c3103801d0b97305f66e2a8b3be9a453c6c89ac
+    Image:          rustfs/rustfs:1.0.0
+    Image ID:       docker.io/rustfs/rustfs@sha256:8cc9801755448b71a786705ce76692c77e14936cccd87cf2fc31842e58f4d1ff
+    Port:           9000/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Fri, 30 Oct 2026 17:05:42 +0300
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     1500m
+      memory:  1Gi
+    Requests:
+      cpu:      250m
+      memory:   256Mi
+    Liveness:   http-get http://:9000/health delay=0s timeout=1s period=10s #success=1 #failure=6
+    Readiness:  http-get http://:9000/health/ready delay=0s timeout=1s period=5s #success=1 #failure=3
+    Startup:    http-get http://:9000/health delay=0s timeout=1s period=5s #success=1 #failure=36
+    Environment Variables from:
+      rustfs-auth    Secret     Optional: false
+      rustfs-config  ConfigMap  Optional: false
+    Environment:     <none>
+    Mounts:
+      /app/logs from logs (rw)
+      /data/rustfs0 from disk0 (rw)
+      /data/rustfs1 from disk1 (rw)
+      /data/rustfs2 from disk2 (rw)
+      /data/rustfs3 from disk3 (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-gg6jj (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  disk0:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  disk0-rustfs-0
+    ReadOnly:   false
+  disk1:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  disk1-rustfs-0
+    ReadOnly:   false
+  disk2:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  disk2-rustfs-0
+    ReadOnly:   false
+  disk3:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  disk3-rustfs-0
+    ReadOnly:   false
+  logs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  kube-api-access-gg6jj:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  7s    default-scheduler  Successfully assigned devops-compute/rustfs-0 to devops-k8s-control-plane
+  Normal  Pulled     6s    kubelet            spec.containers{rustfs}: Container image "rustfs/rustfs:1.0.0" already present on machine and can be accessed by the pod
+  Normal  Created    6s    kubelet            spec.containers{rustfs}: Container created
+  Normal  Started    6s    kubelet            spec.containers{rustfs}: Container started
+

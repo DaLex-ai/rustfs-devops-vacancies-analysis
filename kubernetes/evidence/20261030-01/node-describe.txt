@@ -1,0 +1,82 @@
+Name:               devops-k8s-control-plane
+Roles:              control-plane
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=devops-k8s-control-plane
+                    kubernetes.io/os=linux
+                    node-role.kubernetes.io/control-plane=
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Fri, 30 Oct 2026 16:58:58 +0300
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  devops-k8s-control-plane
+  AcquireTime:     <unset>
+  RenewTime:       Fri, 30 Oct 2026 17:05:43 +0300
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Fri, 30 Oct 2026 17:02:56 +0300   Fri, 30 Oct 2026 16:58:57 +0300   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Fri, 30 Oct 2026 17:02:56 +0300   Fri, 30 Oct 2026 16:58:57 +0300   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Fri, 30 Oct 2026 17:02:56 +0300   Fri, 30 Oct 2026 16:58:57 +0300   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Fri, 30 Oct 2026 17:02:56 +0300   Fri, 30 Oct 2026 16:59:18 +0300   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  172.26.0.2
+  Hostname:    devops-k8s-control-plane
+Capacity:
+  cpu:                16
+  ephemeral-storage:  1055762868Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             14211260Ki
+  pods:               110
+Allocatable:
+  cpu:                16
+  ephemeral-storage:  1055762868Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             14211260Ki
+  pods:               110
+System Info:
+  Machine ID:                 bc0ca8f6b46347e68145c979a663149d
+  System UUID:                bc0ca8f6b46347e68145c979a663149d
+  Boot ID:                    3eb360da-2ce1-4d1c-b30b-8c62dee27cd6
+  Kernel Version:             6.6.87.2-microsoft-standard-WSL2
+  OS Image:                   Debian GNU/Linux 13 (trixie)
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://2.3.4
+  Kubelet Version:            v1.35.8
+  Kube-Proxy Version:         
+PodCIDR:                      10.244.0.0/24
+PodCIDRs:                     10.244.0.0/24
+ProviderID:                   kind://docker/devops-k8s/devops-k8s-control-plane
+Non-terminated Pods:          (10 in total)
+  Namespace                   Name                                                CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                                ------------  ----------  ---------------  -------------  ---
+  devops-compute              rustfs-0                                            250m (1%)     1500m (9%)  256Mi (1%)       1Gi (7%)       6s
+  kube-system                 coredns-7d764666f9-bg6fm                            100m (0%)     0 (0%)      70Mi (0%)        170Mi (1%)     6m40s
+  kube-system                 coredns-7d764666f9-vbrbm                            100m (0%)     0 (0%)      70Mi (0%)        170Mi (1%)     6m40s
+  kube-system                 etcd-devops-k8s-control-plane                       100m (0%)     0 (0%)      100Mi (0%)       0 (0%)         6m47s
+  kube-system                 kindnet-hh9mt                                       100m (0%)     0 (0%)      50Mi (0%)        0 (0%)         6m40s
+  kube-system                 kube-apiserver-devops-k8s-control-plane             250m (1%)     0 (0%)      0 (0%)           0 (0%)         6m47s
+  kube-system                 kube-controller-manager-devops-k8s-control-plane    200m (1%)     0 (0%)      0 (0%)           0 (0%)         6m47s
+  kube-system                 kube-proxy-ng7cx                                    0 (0%)        0 (0%)      0 (0%)           0 (0%)         6m40s
+  kube-system                 kube-scheduler-devops-k8s-control-plane             100m (0%)     0 (0%)      0 (0%)           0 (0%)         6m47s
+  local-path-storage          local-path-provisioner-67b778fdf6-6f5t9             0 (0%)        0 (0%)      0 (0%)           0 (0%)         6m40s
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                1200m (7%)  1500m (9%)
+  memory             546Mi (3%)  1364Mi (9%)
+  ephemeral-storage  0 (0%)      0 (0%)
+  hugepages-1Gi      0 (0%)      0 (0%)
+  hugepages-2Mi      0 (0%)      0 (0%)
+Events:
+  Type    Reason          Age    From             Message
+  ----    ------          ----   ----             -------
+  Normal  RegisteredNode  6m41s  node-controller  Node devops-k8s-control-plane event: Registered Node devops-k8s-control-plane in Controller
+

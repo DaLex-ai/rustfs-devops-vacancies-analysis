@@ -1,0 +1,73 @@
+Name:             split-20261030-01-bgrt2
+Namespace:        devops-compute
+Priority:         0
+Service Account:  default
+Node:             devops-k8s-control-plane/172.26.0.2
+Start Time:       Fri, 30 Oct 2026 17:07:15 +0300
+Labels:           batch.kubernetes.io/controller-uid=5e30f8a8-0ea7-4c0e-ae31-e428fa8961b6
+                  batch.kubernetes.io/job-name=split-20261030-01
+                  controller-uid=5e30f8a8-0ea7-4c0e-ae31-e428fa8961b6
+                  job-name=split-20261030-01
+                  lab-run=20261030-01
+Annotations:      <none>
+Status:           Succeeded
+IP:               10.244.0.14
+IPs:
+  IP:           10.244.0.14
+Controlled By:  Job/split-20261030-01
+Containers:
+  compute:
+    Container ID:  containerd://3132f769f4ed1d79c27fa14e0deb4327430ee276f040e2488658b317c169a711
+    Image:         devops-mapreduce:k8s
+    Image ID:      docker.io/library/import-2026-10-30@sha256:6423fa40826b76d021f27865bfe40e570ea3a650a040253ada360f85d962374d
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      split
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Fri, 30 Oct 2026 17:07:16 +0300
+      Finished:     Fri, 30 Oct 2026 17:08:00 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  1Gi
+    Requests:
+      cpu:     250m
+      memory:  128Mi
+    Environment Variables from:
+      rustfs-auth  Secret  Optional: false
+    Environment:
+      RUSTFS_ENDPOINT:  http://rustfs:9000
+      RUN_PREFIX:       kubernetes/20261030-01/parallel
+      PARTS:            3
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-s48gw (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-s48gw:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  50s   default-scheduler  Successfully assigned devops-compute/split-20261030-01-bgrt2 to devops-k8s-control-plane
+  Normal  Pulled     49s   kubelet            spec.containers{compute}: Container image "devops-mapreduce:k8s" already present on machine and can be accessed by the pod
+  Normal  Created    49s   kubelet            spec.containers{compute}: Container created
+  Normal  Started    49s   kubelet            spec.containers{compute}: Container started
+

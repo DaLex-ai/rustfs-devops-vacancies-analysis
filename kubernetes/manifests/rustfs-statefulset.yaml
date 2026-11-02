@@ -1,0 +1,182 @@
+{
+  "apiVersion": "apps/v1",
+  "kind": "StatefulSet",
+  "metadata": {
+    "name": "rustfs",
+    "namespace": "devops-compute"
+  },
+  "spec": {
+    "serviceName": "rustfs",
+    "replicas": 1,
+    "selector": {
+      "matchLabels": {
+        "app": "rustfs"
+      }
+    },
+    "template": {
+      "metadata": {
+        "labels": {
+          "app": "rustfs"
+        }
+      },
+      "spec": {
+        "securityContext": {
+          "runAsUser": 10001,
+          "runAsGroup": 10001,
+          "fsGroup": 10001
+        },
+        "containers": [
+          {
+            "name": "rustfs",
+            "image": "rustfs/rustfs:1.0.0",
+            "imagePullPolicy": "IfNotPresent",
+            "envFrom": [
+              {
+                "secretRef": {
+                  "name": "rustfs-auth"
+                }
+              },
+              {
+                "configMapRef": {
+                  "name": "rustfs-config"
+                }
+              }
+            ],
+            "ports": [
+              {
+                "containerPort": 9000
+              }
+            ],
+            "volumeMounts": [
+              {
+                "name": "disk0",
+                "mountPath": "/data/rustfs0"
+              },
+              {
+                "name": "disk1",
+                "mountPath": "/data/rustfs1"
+              },
+              {
+                "name": "disk2",
+                "mountPath": "/data/rustfs2"
+              },
+              {
+                "name": "disk3",
+                "mountPath": "/data/rustfs3"
+              },
+              {
+                "name": "logs",
+                "mountPath": "/app/logs"
+              }
+            ],
+            "resources": {
+              "requests": {
+                "cpu": "250m",
+                "memory": "256Mi"
+              },
+              "limits": {
+                "cpu": "1500m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "httpGet": {
+                "path": "/health",
+                "port": 9000
+              },
+              "periodSeconds": 5,
+              "failureThreshold": 36
+            },
+            "readinessProbe": {
+              "httpGet": {
+                "path": "/health/ready",
+                "port": 9000
+              },
+              "periodSeconds": 5
+            },
+            "livenessProbe": {
+              "httpGet": {
+                "path": "/health",
+                "port": 9000
+              },
+              "periodSeconds": 10,
+              "failureThreshold": 6
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "name": "logs",
+            "emptyDir": {}
+          }
+        ]
+      }
+    },
+    "volumeClaimTemplates": [
+      {
+        "metadata": {
+          "name": "disk0"
+        },
+        "spec": {
+          "accessModes": [
+            "ReadWriteOnce"
+          ],
+          "storageClassName": "standard",
+          "resources": {
+            "requests": {
+              "storage": "3Gi"
+            }
+          }
+        }
+      },
+      {
+        "metadata": {
+          "name": "disk1"
+        },
+        "spec": {
+          "accessModes": [
+            "ReadWriteOnce"
+          ],
+          "storageClassName": "standard",
+          "resources": {
+            "requests": {
+              "storage": "3Gi"
+            }
+          }
+        }
+      },
+      {
+        "metadata": {
+          "name": "disk2"
+        },
+        "spec": {
+          "accessModes": [
+            "ReadWriteOnce"
+          ],
+          "storageClassName": "standard",
+          "resources": {
+            "requests": {
+              "storage": "3Gi"
+            }
+          }
+        }
+      },
+      {
+        "metadata": {
+          "name": "disk3"
+        },
+        "spec": {
+          "accessModes": [
+            "ReadWriteOnce"
+          ],
+          "storageClassName": "standard",
+          "resources": {
+            "requests": {
+              "storage": "3Gi"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

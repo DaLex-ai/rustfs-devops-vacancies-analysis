@@ -1,0 +1,227 @@
+Name:             map-20261030-01-0-xl9wl
+Namespace:        devops-compute
+Priority:         0
+Service Account:  default
+Node:             devops-k8s-control-plane/172.26.0.2
+Start Time:       Fri, 30 Oct 2026 17:08:06 +0300
+Labels:           batch.kubernetes.io/controller-uid=e104a653-7e88-4cf1-95bd-8c4466def2d8
+                  batch.kubernetes.io/job-completion-index=0
+                  batch.kubernetes.io/job-name=map-20261030-01
+                  controller-uid=e104a653-7e88-4cf1-95bd-8c4466def2d8
+                  job-name=map-20261030-01
+                  lab-run=20261030-01
+Annotations:      batch.kubernetes.io/job-completion-index: 0
+Status:           Succeeded
+IP:               10.244.0.15
+IPs:
+  IP:           10.244.0.15
+Controlled By:  Job/map-20261030-01
+Containers:
+  compute:
+    Container ID:  containerd://07a50b7655ff6671c0ce501edf4112d593e60b6a86d3ca5e09670d67dda503f5
+    Image:         devops-mapreduce:k8s
+    Image ID:      docker.io/library/import-2026-10-30@sha256:6423fa40826b76d021f27865bfe40e570ea3a650a040253ada360f85d962374d
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      map
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Fri, 30 Oct 2026 17:08:07 +0300
+      Finished:     Fri, 30 Oct 2026 17:08:13 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  256Mi
+    Requests:
+      cpu:     250m
+      memory:  64Mi
+    Environment Variables from:
+      rustfs-auth  Secret  Optional: false
+    Environment:
+      RUSTFS_ENDPOINT:       http://rustfs:9000
+      RUN_PREFIX:            kubernetes/20261030-01/parallel
+      PARTS:                 3
+      JOB_COMPLETION_INDEX:   (v1:metadata.labels['batch.kubernetes.io/job-completion-index'])
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-ltnwh (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-ltnwh:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  13s   default-scheduler  Successfully assigned devops-compute/map-20261030-01-0-xl9wl to devops-k8s-control-plane
+  Normal  Pulled     12s   kubelet            spec.containers{compute}: Container image "devops-mapreduce:k8s" already present on machine and can be accessed by the pod
+  Normal  Created    12s   kubelet            spec.containers{compute}: Container created
+  Normal  Started    12s   kubelet            spec.containers{compute}: Container started
+
+
+Name:             map-20261030-01-1-lm2xv
+Namespace:        devops-compute
+Priority:         0
+Service Account:  default
+Node:             devops-k8s-control-plane/172.26.0.2
+Start Time:       Fri, 30 Oct 2026 17:08:06 +0300
+Labels:           batch.kubernetes.io/controller-uid=e104a653-7e88-4cf1-95bd-8c4466def2d8
+                  batch.kubernetes.io/job-completion-index=1
+                  batch.kubernetes.io/job-name=map-20261030-01
+                  controller-uid=e104a653-7e88-4cf1-95bd-8c4466def2d8
+                  job-name=map-20261030-01
+                  lab-run=20261030-01
+Annotations:      batch.kubernetes.io/job-completion-index: 1
+Status:           Succeeded
+IP:               10.244.0.16
+IPs:
+  IP:           10.244.0.16
+Controlled By:  Job/map-20261030-01
+Containers:
+  compute:
+    Container ID:  containerd://899052bfd75f47470618aaf39430acea5a2c4ded37a4195e1e0485a0b71fba29
+    Image:         devops-mapreduce:k8s
+    Image ID:      docker.io/library/import-2026-10-30@sha256:6423fa40826b76d021f27865bfe40e570ea3a650a040253ada360f85d962374d
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      map
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Fri, 30 Oct 2026 17:08:07 +0300
+      Finished:     Fri, 30 Oct 2026 17:08:12 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  256Mi
+    Requests:
+      cpu:     250m
+      memory:  64Mi
+    Environment Variables from:
+      rustfs-auth  Secret  Optional: false
+    Environment:
+      RUSTFS_ENDPOINT:       http://rustfs:9000
+      RUN_PREFIX:            kubernetes/20261030-01/parallel
+      PARTS:                 3
+      JOB_COMPLETION_INDEX:   (v1:metadata.labels['batch.kubernetes.io/job-completion-index'])
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-66nc4 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-66nc4:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  13s   default-scheduler  Successfully assigned devops-compute/map-20261030-01-1-lm2xv to devops-k8s-control-plane
+  Normal  Pulled     12s   kubelet            spec.containers{compute}: Container image "devops-mapreduce:k8s" already present on machine and can be accessed by the pod
+  Normal  Created    12s   kubelet            spec.containers{compute}: Container created
+  Normal  Started    12s   kubelet            spec.containers{compute}: Container started
+
+
+Name:             map-20261030-01-2-xm42d
+Namespace:        devops-compute
+Priority:         0
+Service Account:  default
+Node:             devops-k8s-control-plane/172.26.0.2
+Start Time:       Fri, 30 Oct 2026 17:08:06 +0300
+Labels:           batch.kubernetes.io/controller-uid=e104a653-7e88-4cf1-95bd-8c4466def2d8
+                  batch.kubernetes.io/job-completion-index=2
+                  batch.kubernetes.io/job-name=map-20261030-01
+                  controller-uid=e104a653-7e88-4cf1-95bd-8c4466def2d8
+                  job-name=map-20261030-01
+                  lab-run=20261030-01
+Annotations:      batch.kubernetes.io/job-completion-index: 2
+Status:           Succeeded
+IP:               10.244.0.17
+IPs:
+  IP:           10.244.0.17
+Controlled By:  Job/map-20261030-01
+Containers:
+  compute:
+    Container ID:  containerd://c7893f9e5c39ccb321111f98f7a916f89636555ac960a92ac5516a0190a46dd9
+    Image:         devops-mapreduce:k8s
+    Image ID:      docker.io/library/import-2026-10-30@sha256:6423fa40826b76d021f27865bfe40e570ea3a650a040253ada360f85d962374d
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      map
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Fri, 30 Oct 2026 17:08:07 +0300
+      Finished:     Fri, 30 Oct 2026 17:08:13 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  256Mi
+    Requests:
+      cpu:     250m
+      memory:  64Mi
+    Environment Variables from:
+      rustfs-auth  Secret  Optional: false
+    Environment:
+      RUSTFS_ENDPOINT:       http://rustfs:9000
+      RUN_PREFIX:            kubernetes/20261030-01/parallel
+      PARTS:                 3
+      JOB_COMPLETION_INDEX:   (v1:metadata.labels['batch.kubernetes.io/job-completion-index'])
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-xc4w9 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-xc4w9:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  13s   default-scheduler  Successfully assigned devops-compute/map-20261030-01-2-xm42d to devops-k8s-control-plane
+  Normal  Pulled     12s   kubelet            spec.containers{compute}: Container image "devops-mapreduce:k8s" already present on machine and can be accessed by the pod
+  Normal  Created    12s   kubelet            spec.containers{compute}: Container created
+  Normal  Started    12s   kubelet            spec.containers{compute}: Container started
+

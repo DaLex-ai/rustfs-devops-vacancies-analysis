@@ -1,0 +1,2 @@
+Error from server (Forbidden): error when creating "STDIN": pods "quota-second-20261030-01" is forbidden: exceeded quota: budget, requested: limits.memory=192Mi,requests.cpu=400m,requests.memory=96Mi, used: limits.memory=128Mi,requests.cpu=250m,requests.memory=64Mi, limited: limits.memory=256Mi,requests.cpu=500m,requests.memory=128Mi
+

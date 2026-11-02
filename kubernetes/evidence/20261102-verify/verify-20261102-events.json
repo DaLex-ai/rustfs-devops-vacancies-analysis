@@ -1,0 +1,330 @@
+{
+  "apiVersion": "v1",
+  "items": [
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-02T10:47:21Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "name": "rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "1549",
+        "uid": "15fe0439-825c-4c06-9009-732b85ea1292"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-02T10:47:21Z",
+      "message": "Pod sandbox changed, it will be killed and re-created.",
+      "metadata": {
+        "creationTimestamp": "2026-11-02T10:47:25Z",
+        "name": "rustfs-0.18e434a69f02cd02",
+        "namespace": "devops-compute",
+        "resourceVersion": "32983",
+        "uid": "5e5e6549-4e30-41db-b5cf-46a674cca9f7"
+      },
+      "reason": "SandboxChanged",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-02T10:47:22Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{rustfs}",
+        "kind": "Pod",
+        "name": "rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "1549",
+        "uid": "15fe0439-825c-4c06-9009-732b85ea1292"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-02T10:47:22Z",
+      "message": "Container image \"rustfs/rustfs:1.0.0\" already present on machine and can be accessed by the pod",
+      "metadata": {
+        "creationTimestamp": "2026-11-02T10:47:25Z",
+        "name": "rustfs-0.18e434a6e2dc1385",
+        "namespace": "devops-compute",
+        "resourceVersion": "32988",
+        "uid": "88a19cd7-48d5-4f14-bb72-471411b8c3e4"
+      },
+      "reason": "Pulled",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-02T10:47:23Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{rustfs}",
+        "kind": "Pod",
+        "name": "rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "1549",
+        "uid": "15fe0439-825c-4c06-9009-732b85ea1292"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-02T10:47:23Z",
+      "message": "Container created",
+      "metadata": {
+        "creationTimestamp": "2026-11-02T10:47:25Z",
+        "name": "rustfs-0.18e434a6eaa2f002",
+        "namespace": "devops-compute",
+        "resourceVersion": "32990",
+        "uid": "3a5f2432-13aa-4271-9638-c2a02a099c03"
+      },
+      "reason": "Created",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-02T10:47:23Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{rustfs}",
+        "kind": "Pod",
+        "name": "rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "1549",
+        "uid": "15fe0439-825c-4c06-9009-732b85ea1292"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-02T10:47:23Z",
+      "message": "Container started",
+      "metadata": {
+        "creationTimestamp": "2026-11-02T10:47:25Z",
+        "name": "rustfs-0.18e434a700b28ecf",
+        "namespace": "devops-compute",
+        "resourceVersion": "32997",
+        "uid": "6d259b98-0378-484c-a8c3-7f9cbc54eb32"
+      },
+      "reason": "Started",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "action": "Binding",
+      "apiVersion": "v1",
+      "eventTime": "2026-11-02T10:48:18.814452Z",
+      "firstTimestamp": null,
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "name": "verify-20261102-4f7mz",
+        "namespace": "devops-compute",
+        "resourceVersion": "33083",
+        "uid": "5606bb2e-c0dd-4904-82ad-eaa40932caf4"
+      },
+      "kind": "Event",
+      "lastTimestamp": null,
+      "message": "Successfully assigned devops-compute/verify-20261102-4f7mz to devops-k8s-control-plane",
+      "metadata": {
+        "creationTimestamp": "2026-11-02T10:48:18Z",
+        "name": "verify-20261102-4f7mz.18e434b3e31dc10f",
+        "namespace": "devops-compute",
+        "resourceVersion": "33087",
+        "uid": "d6f8a7ca-2597-445a-98eb-5c1ebb77f0e8"
+      },
+      "reason": "Scheduled",
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": "default-scheduler-devops-k8s-control-plane",
+      "source": {},
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-02T10:48:19Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{compute}",
+        "kind": "Pod",
+        "name": "verify-20261102-4f7mz",
+        "namespace": "devops-compute",
+        "resourceVersion": "33086",
+        "uid": "5606bb2e-c0dd-4904-82ad-eaa40932caf4"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-02T10:48:19Z",
+      "message": "Container image \"devops-mapreduce:k8s\" already present on machine and can be accessed by the pod",
+      "metadata": {
+        "creationTimestamp": "2026-11-02T10:48:19Z",
+        "name": "verify-20261102-4f7mz.18e434b40486dc62",
+        "namespace": "devops-compute",
+        "resourceVersion": "33090",
+        "uid": "57e45179-6348-490f-8085-3199351a50e3"
+      },
+      "reason": "Pulled",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-02T10:48:19Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{compute}",
+        "kind": "Pod",
+        "name": "verify-20261102-4f7mz",
+        "namespace": "devops-compute",
+        "resourceVersion": "33086",
+        "uid": "5606bb2e-c0dd-4904-82ad-eaa40932caf4"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-02T10:48:19Z",
+      "message": "Container created",
+      "metadata": {
+        "creationTimestamp": "2026-11-02T10:48:19Z",
+        "name": "verify-20261102-4f7mz.18e434b406ae3f01",
+        "namespace": "devops-compute",
+        "resourceVersion": "33091",
+        "uid": "9bf99172-74c3-4e64-b05b-a820d7f888a7"
+      },
+      "reason": "Created",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-02T10:48:19Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{compute}",
+        "kind": "Pod",
+        "name": "verify-20261102-4f7mz",
+        "namespace": "devops-compute",
+        "resourceVersion": "33086",
+        "uid": "5606bb2e-c0dd-4904-82ad-eaa40932caf4"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-02T10:48:19Z",
+      "message": "Container started",
+      "metadata": {
+        "creationTimestamp": "2026-11-02T10:48:19Z",
+        "name": "verify-20261102-4f7mz.18e434b40fb4a026",
+        "namespace": "devops-compute",
+        "resourceVersion": "33092",
+        "uid": "376be663-96ed-4150-9066-c180ee8f04c9"
+      },
+      "reason": "Started",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-02T10:48:18Z",
+      "involvedObject": {
+        "apiVersion": "batch/v1",
+        "kind": "Job",
+        "name": "verify-20261102",
+        "namespace": "devops-compute",
+        "resourceVersion": "33082",
+        "uid": "4f88c9b8-e8c9-4b45-af79-3339c292a4c9"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-02T10:48:18Z",
+      "message": "Created pod: verify-20261102-4f7mz",
+      "metadata": {
+        "creationTimestamp": "2026-11-02T10:48:18Z",
+        "name": "verify-20261102.18e434b3e261d26b",
+        "namespace": "devops-compute",
+        "resourceVersion": "33084",
+        "uid": "f65e0289-3432-4440-b43d-a5189e446e7c"
+      },
+      "reason": "SuccessfulCreate",
+      "reportingComponent": "job-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "job-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-11-02T10:48:33Z",
+      "involvedObject": {
+        "apiVersion": "batch/v1",
+        "kind": "Job",
+        "name": "verify-20261102",
+        "namespace": "devops-compute",
+        "resourceVersion": "33118",
+        "uid": "4f88c9b8-e8c9-4b45-af79-3339c292a4c9"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-11-02T10:48:33Z",
+      "message": "Job completed",
+      "metadata": {
+        "creationTimestamp": "2026-11-02T10:48:33Z",
+        "name": "verify-20261102.18e434b74976c87f",
+        "namespace": "devops-compute",
+        "resourceVersion": "33121",
+        "uid": "26b1d37a-3a08-4ed4-8cdf-a577fb64215b"
+      },
+      "reason": "Completed",
+      "reportingComponent": "job-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "job-controller"
+      },
+      "type": "Normal"
+    }
+  ],
+  "kind": "List",
+  "metadata": {
+    "resourceVersion": ""
+  }
+}

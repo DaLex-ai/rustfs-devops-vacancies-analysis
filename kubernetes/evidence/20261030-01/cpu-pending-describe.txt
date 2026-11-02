@@ -1,0 +1,110 @@
+Name:             cpu-blocker-20261030-01
+Namespace:        devops-scheduling
+Priority:         0
+Service Account:  default
+Node:             devops-k8s-control-plane/172.26.0.2
+Start Time:       Fri, 30 Oct 2026 17:09:04 +0300
+Labels:           lab-run=20261030-01
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.20
+IPs:
+  IP:  10.244.0.20
+Containers:
+  task:
+    Container ID:  containerd://ce3200c67b81be2549b16abc9017a505c9e2fea3ff7e8104209bed4b14d8d082
+    Image:         devops-mapreduce:k8s
+    Image ID:      docker.io/library/import-2026-10-30@sha256:6423fa40826b76d021f27865bfe40e570ea3a650a040253ada360f85d962374d
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      python
+      -c
+      import time; time.sleep(300)
+    State:          Running
+      Started:      Fri, 30 Oct 2026 17:09:05 +0300
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     14300m
+      memory:  64Mi
+    Requests:
+      cpu:        14300m
+      memory:     32Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-vqsd5 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-vqsd5:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  2s    default-scheduler  Successfully assigned devops-scheduling/cpu-blocker-20261030-01 to devops-k8s-control-plane
+  Normal  Pulled     1s    kubelet            spec.containers{task}: Container image "devops-mapreduce:k8s" already present on machine and can be accessed by the pod
+  Normal  Created    1s    kubelet            spec.containers{task}: Container created
+  Normal  Started    1s    kubelet            spec.containers{task}: Container started
+
+
+Name:             cpu-waiter-20261030-01
+Namespace:        devops-scheduling
+Priority:         0
+Service Account:  default
+Node:             <none>
+Labels:           lab-run=20261030-01
+Annotations:      <none>
+Status:           Pending
+IP:               
+IPs:              <none>
+Containers:
+  task:
+    Image:      devops-mapreduce:k8s
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      python
+      -c
+      print(sum(i*i for i in range(1000000)), flush=True)
+    Limits:
+      cpu:     1
+      memory:  64Mi
+    Requests:
+      cpu:        1
+      memory:     32Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-vmjf8 (ro)
+Conditions:
+  Type           Status
+  PodScheduled   False 
+Volumes:
+  kube-api-access-vmjf8:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age   From               Message
+  ----     ------            ----  ----               -------
+  Warning  FailedScheduling  2s    default-scheduler  0/1 nodes are available: 1 Insufficient cpu. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+

@@ -1,0 +1,21 @@
+[
+  {
+    "parts": 3,
+    "rows": [
+      76463,
+      76463,
+      76462
+    ],
+    "total_rows": 229388,
+    "record_sha256": [
+      "a7d4b8e921f86e706ccd17cc9bcf0dfbfd199b2f36eef1c42678cf7766157046",
+      "48697bc1e91eec69a6b6a0be72eebfd67210c7abdd700228a72c3f7bb03c7338",
+      "0479be66e69b2aa3b7a8174f4828dde9df43928691c9a4660048395c16355f57"
+    ],
+    "memory": {
+      "metric": "memory.peak",
+      "bytes": 973357056
+    },
+    "mode": "split"
+  }
+]

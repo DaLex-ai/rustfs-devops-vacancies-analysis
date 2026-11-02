@@ -1,0 +1,9 @@
+**
+!check_storage.py
+!mapreduce_devops.py
+!results/
+!results/mapreduce/
+!results/mapreduce/skills_2.csv
+!kubernetes/
+!kubernetes/worker.py
+!kubernetes/requirements.txt
