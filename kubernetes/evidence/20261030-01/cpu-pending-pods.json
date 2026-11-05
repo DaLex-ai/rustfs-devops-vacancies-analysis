@@ -1,0 +1,358 @@
+{
+  "apiVersion": "v1",
+  "items": [
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "annotations": {
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Pod\",\"metadata\":{\"annotations\":{},\"labels\":{\"lab-run\":\"20261030-01\"},\"name\":\"cpu-blocker-20261030-01\",\"namespace\":\"devops-scheduling\"},\"spec\":{\"containers\":[{\"command\":[\"python\",\"-c\",\"import time; time.sleep(300)\"],\"image\":\"devops-mapreduce:k8s\",\"imagePullPolicy\":\"Never\",\"name\":\"task\",\"resources\":{\"limits\":{\"cpu\":\"14300m\",\"memory\":\"64Mi\"},\"requests\":{\"cpu\":\"14300m\",\"memory\":\"32Mi\"}}}],\"restartPolicy\":\"Never\",\"terminationGracePeriodSeconds\":3}}\n"
+        },
+        "creationTimestamp": "2026-10-30T14:09:04Z",
+        "generation": 1,
+        "labels": {
+          "lab-run": "20261030-01"
+        },
+        "name": "cpu-blocker-20261030-01",
+        "namespace": "devops-scheduling",
+        "resourceVersion": "1609",
+        "uid": "e4d90248-2eea-4926-8a72-0d4766a46242"
+      },
+      "spec": {
+        "containers": [
+          {
+            "command": [
+              "python",
+              "-c",
+              "import time; time.sleep(300)"
+            ],
+            "image": "devops-mapreduce:k8s",
+            "imagePullPolicy": "Never",
+            "name": "task",
+            "resources": {
+              "limits": {
+                "cpu": "14300m",
+                "memory": "64Mi"
+              },
+              "requests": {
+                "cpu": "14300m",
+                "memory": "32Mi"
+              }
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File",
+            "volumeMounts": [
+              {
+                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                "name": "kube-api-access-vqsd5",
+                "readOnly": true
+              }
+            ]
+          }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "enableServiceLinks": true,
+        "nodeName": "devops-k8s-control-plane",
+        "preemptionPolicy": "PreemptLowerPriority",
+        "priority": 0,
+        "restartPolicy": "Never",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "serviceAccount": "default",
+        "serviceAccountName": "default",
+        "terminationGracePeriodSeconds": 3,
+        "tolerations": [
+          {
+            "effect": "NoExecute",
+            "key": "node.kubernetes.io/not-ready",
+            "operator": "Exists",
+            "tolerationSeconds": 300
+          },
+          {
+            "effect": "NoExecute",
+            "key": "node.kubernetes.io/unreachable",
+            "operator": "Exists",
+            "tolerationSeconds": 300
+          }
+        ],
+        "volumes": [
+          {
+            "name": "kube-api-access-vqsd5",
+            "projected": {
+              "defaultMode": 420,
+              "sources": [
+                {
+                  "serviceAccountToken": {
+                    "expirationSeconds": 3607,
+                    "path": "token"
+                  }
+                },
+                {
+                  "configMap": {
+                    "items": [
+                      {
+                        "key": "ca.crt",
+                        "path": "ca.crt"
+                      }
+                    ],
+                    "name": "kube-root-ca.crt"
+                  }
+                },
+                {
+                  "downwardAPI": {
+                    "items": [
+                      {
+                        "fieldRef": {
+                          "apiVersion": "v1",
+                          "fieldPath": "metadata.namespace"
+                        },
+                        "path": "namespace"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-10-30T14:09:04Z",
+            "observedGeneration": 1,
+            "status": "True",
+            "type": "PodReadyToStartContainers"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-10-30T14:09:04Z",
+            "observedGeneration": 1,
+            "status": "True",
+            "type": "Initialized"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-10-30T14:09:04Z",
+            "observedGeneration": 1,
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-10-30T14:09:04Z",
+            "observedGeneration": 1,
+            "status": "True",
+            "type": "ContainersReady"
+          },
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-10-30T14:09:04Z",
+            "observedGeneration": 1,
+            "status": "True",
+            "type": "PodScheduled"
+          }
+        ],
+        "containerStatuses": [
+          {
+            "allocatedResources": {
+              "cpu": "14300m",
+              "memory": "32Mi"
+            },
+            "containerID": "containerd://ce3200c67b81be2549b16abc9017a505c9e2fea3ff7e8104209bed4b14d8d082",
+            "image": "docker.io/library/devops-mapreduce:k8s",
+            "imageID": "docker.io/library/import-2026-10-30@sha256:6423fa40826b76d021f27865bfe40e570ea3a650a040253ada360f85d962374d",
+            "lastState": {},
+            "name": "task",
+            "ready": true,
+            "resources": {
+              "limits": {
+                "cpu": "14300m",
+                "memory": "64Mi"
+              },
+              "requests": {
+                "cpu": "14300m",
+                "memory": "32Mi"
+              }
+            },
+            "restartCount": 0,
+            "started": true,
+            "state": {
+              "running": {
+                "startedAt": "2026-10-30T14:09:05Z"
+              }
+            },
+            "user": {
+              "linux": {
+                "gid": 0,
+                "supplementalGroups": [
+                  0
+                ],
+                "uid": 10001
+              }
+            },
+            "volumeMounts": [
+              {
+                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                "name": "kube-api-access-vqsd5",
+                "readOnly": true,
+                "recursiveReadOnly": "Disabled"
+              }
+            ]
+          }
+        ],
+        "hostIP": "172.26.0.2",
+        "hostIPs": [
+          {
+            "ip": "172.26.0.2"
+          }
+        ],
+        "observedGeneration": 1,
+        "phase": "Running",
+        "podIP": "10.244.0.20",
+        "podIPs": [
+          {
+            "ip": "10.244.0.20"
+          }
+        ],
+        "qosClass": "Burstable",
+        "startTime": "2026-10-30T14:09:04Z"
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "annotations": {
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Pod\",\"metadata\":{\"annotations\":{},\"labels\":{\"lab-run\":\"20261030-01\"},\"name\":\"cpu-waiter-20261030-01\",\"namespace\":\"devops-scheduling\"},\"spec\":{\"containers\":[{\"command\":[\"python\",\"-c\",\"print(sum(i*i for i in range(1000000)), flush=True)\"],\"image\":\"devops-mapreduce:k8s\",\"imagePullPolicy\":\"Never\",\"name\":\"task\",\"resources\":{\"limits\":{\"cpu\":\"1000m\",\"memory\":\"64Mi\"},\"requests\":{\"cpu\":\"1000m\",\"memory\":\"32Mi\"}}}],\"restartPolicy\":\"Never\",\"terminationGracePeriodSeconds\":3}}\n"
+        },
+        "creationTimestamp": "2026-10-30T14:09:04Z",
+        "generation": 1,
+        "labels": {
+          "lab-run": "20261030-01"
+        },
+        "name": "cpu-waiter-20261030-01",
+        "namespace": "devops-scheduling",
+        "resourceVersion": "1612",
+        "uid": "883279d1-b73c-44ae-91ca-fce3bde685c1"
+      },
+      "spec": {
+        "containers": [
+          {
+            "command": [
+              "python",
+              "-c",
+              "print(sum(i*i for i in range(1000000)), flush=True)"
+            ],
+            "image": "devops-mapreduce:k8s",
+            "imagePullPolicy": "Never",
+            "name": "task",
+            "resources": {
+              "limits": {
+                "cpu": "1",
+                "memory": "64Mi"
+              },
+              "requests": {
+                "cpu": "1",
+                "memory": "32Mi"
+              }
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File",
+            "volumeMounts": [
+              {
+                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                "name": "kube-api-access-vmjf8",
+                "readOnly": true
+              }
+            ]
+          }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "enableServiceLinks": true,
+        "preemptionPolicy": "PreemptLowerPriority",
+        "priority": 0,
+        "restartPolicy": "Never",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "serviceAccount": "default",
+        "serviceAccountName": "default",
+        "terminationGracePeriodSeconds": 3,
+        "tolerations": [
+          {
+            "effect": "NoExecute",
+            "key": "node.kubernetes.io/not-ready",
+            "operator": "Exists",
+            "tolerationSeconds": 300
+          },
+          {
+            "effect": "NoExecute",
+            "key": "node.kubernetes.io/unreachable",
+            "operator": "Exists",
+            "tolerationSeconds": 300
+          }
+        ],
+        "volumes": [
+          {
+            "name": "kube-api-access-vmjf8",
+            "projected": {
+              "defaultMode": 420,
+              "sources": [
+                {
+                  "serviceAccountToken": {
+                    "expirationSeconds": 3607,
+                    "path": "token"
+                  }
+                },
+                {
+                  "configMap": {
+                    "items": [
+                      {
+                        "key": "ca.crt",
+                        "path": "ca.crt"
+                      }
+                    ],
+                    "name": "kube-root-ca.crt"
+                  }
+                },
+                {
+                  "downwardAPI": {
+                    "items": [
+                      {
+                        "fieldRef": {
+                          "apiVersion": "v1",
+                          "fieldPath": "metadata.namespace"
+                        },
+                        "path": "namespace"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastProbeTime": null,
+            "lastTransitionTime": "2026-10-30T14:09:04Z",
+            "message": "0/1 nodes are available: 1 Insufficient cpu. no new claims to deallocate, preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.",
+            "observedGeneration": 1,
+            "reason": "Unschedulable",
+            "status": "False",
+            "type": "PodScheduled"
+          }
+        ],
+        "phase": "Pending",
+        "qosClass": "Burstable"
+      }
+    }
+  ],
+  "kind": "List",
+  "metadata": {
+    "resourceVersion": ""
+  }
+}

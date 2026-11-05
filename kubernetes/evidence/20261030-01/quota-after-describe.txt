@@ -1,0 +1,62 @@
+Name:             quota-second-20261030-01
+Namespace:        devops-quota
+Priority:         0
+Service Account:  default
+Node:             devops-k8s-control-plane/172.26.0.2
+Start Time:       Fri, 30 Oct 2026 17:09:29 +0300
+Labels:           lab-run=20261030-01
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.25
+IPs:
+  IP:  10.244.0.25
+Containers:
+  task:
+    Container ID:  containerd://6dcbb65bcaffae11b50b4f0392e3dd6c05985190e68635802a5c72c2b503f6f4
+    Image:         devops-mapreduce:k8s
+    Image ID:      docker.io/library/import-2026-10-30@sha256:6423fa40826b76d021f27865bfe40e570ea3a650a040253ada360f85d962374d
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      python
+      -c
+      import time; time.sleep(300)
+    State:          Running
+      Started:      Fri, 30 Oct 2026 17:09:30 +0300
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     400m
+      memory:  192Mi
+    Requests:
+      cpu:        400m
+      memory:     96Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-qm55m (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-qm55m:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  2s    default-scheduler  Successfully assigned devops-quota/quota-second-20261030-01 to devops-k8s-control-plane
+  Normal  Pulled     1s    kubelet            spec.containers{task}: Container image "devops-mapreduce:k8s" already present on machine and can be accessed by the pod
+  Normal  Created    1s    kubelet            spec.containers{task}: Container created
+  Normal  Started    1s    kubelet            spec.containers{task}: Container started
+

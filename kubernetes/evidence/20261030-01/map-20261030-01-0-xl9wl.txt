@@ -1,0 +1,3 @@
+{"event": "started", "mode": "map", "time": 1793369287.6448123}
+{"total_rows": 76463, "devops_rows": 1693, "with_skills": 1179, "unique_pairs": 12428, "occurrences": 46560, "compute_started": 1793369287.8810248, "compute_finished": 1793369293.1603713, "compute_seconds": 5.279346466064453, "record_sha256": "a7d4b8e921f86e706ccd17cc9bcf0dfbfd199b2f36eef1c42678cf7766157046", "index": 0, "memory": {"metric": "memory.peak", "bytes": 50135040}, "mode": "map"}
+

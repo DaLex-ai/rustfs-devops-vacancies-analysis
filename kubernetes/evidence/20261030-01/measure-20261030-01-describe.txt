@@ -1,0 +1,73 @@
+Name:             measure-20261030-01-jjxcg
+Namespace:        devops-compute
+Priority:         0
+Service Account:  default
+Node:             devops-k8s-control-plane/172.26.0.2
+Start Time:       Fri, 30 Oct 2026 17:06:41 +0300
+Labels:           batch.kubernetes.io/controller-uid=1450959c-26f2-4fae-843e-dfd67be83aff
+                  batch.kubernetes.io/job-name=measure-20261030-01
+                  controller-uid=1450959c-26f2-4fae-843e-dfd67be83aff
+                  job-name=measure-20261030-01
+                  lab-run=20261030-01
+Annotations:      <none>
+Status:           Succeeded
+IP:               10.244.0.11
+IPs:
+  IP:           10.244.0.11
+Controlled By:  Job/measure-20261030-01
+Containers:
+  compute:
+    Container ID:  containerd://f9448d29d8daff2d8734298b76497b56fbb04dde13a93bcad9a3dd78a6f5272a
+    Image:         devops-mapreduce:k8s
+    Image ID:      docker.io/library/import-2026-10-30@sha256:6423fa40826b76d021f27865bfe40e570ea3a650a040253ada360f85d962374d
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      single
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Fri, 30 Oct 2026 17:06:42 +0300
+      Finished:     Fri, 30 Oct 2026 17:06:52 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  256Mi
+    Requests:
+      cpu:     250m
+      memory:  64Mi
+    Environment Variables from:
+      rustfs-auth  Secret  Optional: false
+    Environment:
+      RUSTFS_ENDPOINT:  http://rustfs:9000
+      RUN_PREFIX:       kubernetes/20261030-01/measure-20261030-01
+      PARTS:            3
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-zdfbp (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-zdfbp:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Pulled     16s   kubelet            spec.containers{compute}: Container image "devops-mapreduce:k8s" already present on machine and can be accessed by the pod
+  Normal  Created    16s   kubelet            spec.containers{compute}: Container created
+  Normal  Started    15s   kubelet            spec.containers{compute}: Container started
+  Normal  Scheduled  15s   default-scheduler  Successfully assigned devops-compute/measure-20261030-01-jjxcg to devops-k8s-control-plane
+

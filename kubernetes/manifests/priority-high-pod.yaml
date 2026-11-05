@@ -1,0 +1,38 @@
+{
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "name": "high-20261030-01",
+    "namespace": "devops-scheduling",
+    "labels": {
+      "lab-run": "20261030-01"
+    }
+  },
+  "spec": {
+    "restartPolicy": "Never",
+    "terminationGracePeriodSeconds": 3,
+    "containers": [
+      {
+        "name": "task",
+        "image": "devops-mapreduce:k8s",
+        "imagePullPolicy": "Never",
+        "command": [
+          "python",
+          "-c",
+          "print(sum(i*i for i in range(1000000)), flush=True)"
+        ],
+        "resources": {
+          "requests": {
+            "cpu": "1000m",
+            "memory": "32Mi"
+          },
+          "limits": {
+            "cpu": "1000m",
+            "memory": "64Mi"
+          }
+        }
+      }
+    ],
+    "priorityClassName": "devops-high"
+  }
+}

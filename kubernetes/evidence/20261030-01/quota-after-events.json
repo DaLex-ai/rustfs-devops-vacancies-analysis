@@ -1,0 +1,302 @@
+{
+  "apiVersion": "v1",
+  "items": [
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:09:22Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "name": "quota-first-20261030-01",
+        "namespace": "devops-quota",
+        "resourceVersion": "1684",
+        "uid": "a894db7f-2d28-4b7e-a66b-cce7e4978131"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:09:22Z",
+      "message": "Successfully assigned devops-quota/quota-first-20261030-01 to devops-k8s-control-plane",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:09:22Z",
+        "name": "quota-first-20261030-01.18e353ef0d453969",
+        "namespace": "devops-quota",
+        "resourceVersion": "1686",
+        "uid": "9dfc7cca-862d-4a6c-b889-f765e6ad9372"
+      },
+      "reason": "Scheduled",
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": "",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:09:23Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{task}",
+        "kind": "Pod",
+        "name": "quota-first-20261030-01",
+        "namespace": "devops-quota",
+        "resourceVersion": "1685",
+        "uid": "a894db7f-2d28-4b7e-a66b-cce7e4978131"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:09:23Z",
+      "message": "Container image \"devops-mapreduce:k8s\" already present on machine and can be accessed by the pod",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:09:23Z",
+        "name": "quota-first-20261030-01.18e353ef35d3037e",
+        "namespace": "devops-quota",
+        "resourceVersion": "1689",
+        "uid": "cb36547b-331e-4642-b7a0-77751f0fd4cd"
+      },
+      "reason": "Pulled",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:09:23Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{task}",
+        "kind": "Pod",
+        "name": "quota-first-20261030-01",
+        "namespace": "devops-quota",
+        "resourceVersion": "1685",
+        "uid": "a894db7f-2d28-4b7e-a66b-cce7e4978131"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:09:23Z",
+      "message": "Container created",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:09:23Z",
+        "name": "quota-first-20261030-01.18e353ef37fcbc25",
+        "namespace": "devops-quota",
+        "resourceVersion": "1690",
+        "uid": "cdb05c13-2e82-47e3-af9b-4145d3c02f65"
+      },
+      "reason": "Created",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:09:23Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{task}",
+        "kind": "Pod",
+        "name": "quota-first-20261030-01",
+        "namespace": "devops-quota",
+        "resourceVersion": "1685",
+        "uid": "a894db7f-2d28-4b7e-a66b-cce7e4978131"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:09:23Z",
+      "message": "Container started",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:09:23Z",
+        "name": "quota-first-20261030-01.18e353ef401a753c",
+        "namespace": "devops-quota",
+        "resourceVersion": "1691",
+        "uid": "9f12fe61-4325-4177-bf7b-f4b9d2ef6f4b"
+      },
+      "reason": "Started",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:09:25Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{task}",
+        "kind": "Pod",
+        "name": "quota-first-20261030-01",
+        "namespace": "devops-quota",
+        "resourceVersion": "1685",
+        "uid": "a894db7f-2d28-4b7e-a66b-cce7e4978131"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:09:25Z",
+      "message": "Stopping container task",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:09:25Z",
+        "name": "quota-first-20261030-01.18e353efa880fcb8",
+        "namespace": "devops-quota",
+        "resourceVersion": "1697",
+        "uid": "7e7b7ab1-f359-4c97-adeb-feb4db9f287b"
+      },
+      "reason": "Killing",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:09:29Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "name": "quota-second-20261030-01",
+        "namespace": "devops-quota",
+        "resourceVersion": "1709",
+        "uid": "a15a63b2-2be9-43f3-a9d2-3a71007d8d54"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:09:29Z",
+      "message": "Successfully assigned devops-quota/quota-second-20261030-01 to devops-k8s-control-plane",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:09:29Z",
+        "name": "quota-second-20261030-01.18e353f0a8a98625",
+        "namespace": "devops-quota",
+        "resourceVersion": "1711",
+        "uid": "4cf1826b-c599-480e-a8ab-01b4d0f480ad"
+      },
+      "reason": "Scheduled",
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": "",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:09:30Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{task}",
+        "kind": "Pod",
+        "name": "quota-second-20261030-01",
+        "namespace": "devops-quota",
+        "resourceVersion": "1710",
+        "uid": "a15a63b2-2be9-43f3-a9d2-3a71007d8d54"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:09:30Z",
+      "message": "Container image \"devops-mapreduce:k8s\" already present on machine and can be accessed by the pod",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:09:30Z",
+        "name": "quota-second-20261030-01.18e353f0c6fda7f4",
+        "namespace": "devops-quota",
+        "resourceVersion": "1715",
+        "uid": "b807dbf9-6b74-4499-bf75-eb6ed32af4b1"
+      },
+      "reason": "Pulled",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:09:30Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{task}",
+        "kind": "Pod",
+        "name": "quota-second-20261030-01",
+        "namespace": "devops-quota",
+        "resourceVersion": "1710",
+        "uid": "a15a63b2-2be9-43f3-a9d2-3a71007d8d54"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:09:30Z",
+      "message": "Container created",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:09:30Z",
+        "name": "quota-second-20261030-01.18e353f0c8b424ff",
+        "namespace": "devops-quota",
+        "resourceVersion": "1716",
+        "uid": "ff6385db-6594-451c-9467-36c60681aa94"
+      },
+      "reason": "Created",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:09:30Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{task}",
+        "kind": "Pod",
+        "name": "quota-second-20261030-01",
+        "namespace": "devops-quota",
+        "resourceVersion": "1710",
+        "uid": "a15a63b2-2be9-43f3-a9d2-3a71007d8d54"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:09:30Z",
+      "message": "Container started",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:09:30Z",
+        "name": "quota-second-20261030-01.18e353f0cf557275",
+        "namespace": "devops-quota",
+        "resourceVersion": "1717",
+        "uid": "7b688ae4-4ce1-45e7-995d-d250b5296a86"
+      },
+      "reason": "Started",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    }
+  ],
+  "kind": "List",
+  "metadata": {
+    "resourceVersion": ""
+  }
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "Id": "sha256:1c2c633f67331a3d83b181f5a7b8b3b59eddf8f19f9a857e07ad387be6fec7ea",
+    "RepoTags": [
+      "devops-mapreduce:k8s"
+    ],
+    "RepoDigests": [
+      "devops-mapreduce@sha256:1c2c633f67331a3d83b181f5a7b8b3b59eddf8f19f9a857e07ad387be6fec7ea"
+    ],
+    "Parent": "",
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": "2026-10-30T14:09:28.746879368Z",
+    "DockerVersion": "",
+    "Author": "",
+    "Architecture": "amd64",
+    "Os": "linux",
+    "Size": 67761206,
+    "GraphDriver": {
+      "Data": null,
+      "Name": "overlayfs"
+    },
+    "RootFS": {
+      "Type": "layers",
+      "Layers": [
+        "sha256:e6a3842ebc7f5e41d8a38f19a0aa5ea56c255475695ac6682882420800cf5465",
+        "sha256:a0f52cec0ae93d9bdcec880c21c37b38fd417b146fc259a3c3319f335dd7f88e",
+        "sha256:027e5044d8c1d000ff58bcc6586b027fd20bae0934603e4aa82007064a5dbb7d",
+        "sha256:41a3f3e0352a2fb6b785a93f2d437b449101343c9adc88d65cd529f4c93350da",
+        "sha256:62debe9b67be8a32ebd2a9832d0f9a5d7ce0ef5d8bdd16a8c73a4bd54355f688",
+        "sha256:e3e73017b4c711357fef37f6a608268be22b573ebe05c696373384c0791850a0",
+        "sha256:9e2c431a06916583141f566c2b637fe7f2de5008c07015758ad89c13a3153083",
+        "sha256:885c7d6407d5f4959ac14b0dbb10f2d7fbfe0e903115a5b341252d807400c6a7",
+        "sha256:7aef1e129e24e1d0ee01b46e44f6748f62562a4652cec958aefc5f8f7f6f71fe",
+        "sha256:7844fafb0e2c54ec1d50f83ada694474fa02f3b550d40037858744febe7bfeb2",
+        "sha256:d4fa5de625f5c919e7d5a2cadc01ec6eec1d8457d3db913992e186d11db9de02"
+      ]
+    },
+    "Metadata": {
+      "LastTagTime": "2026-10-30T14:09:30.672319412Z"
+    },
+    "Descriptor": {
+      "mediaType": "application/vnd.oci.image.index.v1+json",
+      "digest": "sha256:1c2c633f67331a3d83b181f5a7b8b3b59eddf8f19f9a857e07ad387be6fec7ea",
+      "size": 856
+    },
+    "Config": {
+      "Cmd": null,
+      "Entrypoint": [
+        "python",
+        "kubernetes/worker.py"
+      ],
+      "Env": [
+        "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "LANG=C.UTF-8",
+        "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+        "PYTHON_VERSION=3.11.13",
+        "PYTHON_SHA256=8fb5f9fbc7609fa822cb31549884575db7fd9657cbffb89510b5d7975963a83a",
+        "PYTHONUNBUFFERED=1",
+        "PYTHONDONTWRITEBYTECODE=1"
+      ],
+      "Labels": null,
+      "OnBuild": null,
+      "User": "10001:10001",
+      "Volumes": null,
+      "WorkingDir": "/app"
+    }
+  }
+]

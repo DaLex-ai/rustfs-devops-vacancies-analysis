@@ -1,0 +1,38 @@
+{
+  "victim_uid": "e2f2b6b9-2058-4601-9a0d-d1408739453a",
+  "preemption_events": [
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:09:15Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "name": "low-20261030-01",
+        "namespace": "devops-scheduling",
+        "resourceVersion": "1649",
+        "uid": "e2f2b6b9-2058-4601-9a0d-d1408739453a"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:09:15Z",
+      "message": "Preempted by pod ae551717-1b53-4a27-bbf3-301240db7831 on node devops-k8s-control-plane",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:09:15Z",
+        "name": "low-20261030-01.18e353ed463de416",
+        "namespace": "devops-scheduling",
+        "resourceVersion": "1655",
+        "uid": "7d6ff2c3-579a-4fa7-a3a1-ebeb80fcf5f6"
+      },
+      "reason": "Preempted",
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": "",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "type": "Normal"
+    }
+  ],
+  "high_completed": true,
+  "passed": true
+}

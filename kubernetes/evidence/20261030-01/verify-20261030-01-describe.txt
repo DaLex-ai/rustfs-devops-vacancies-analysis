@@ -1,0 +1,73 @@
+Name:             verify-20261030-01-9sqnd
+Namespace:        devops-compute
+Priority:         0
+Service Account:  default
+Node:             devops-k8s-control-plane/172.26.0.2
+Start Time:       Fri, 30 Oct 2026 17:10:13 +0300
+Labels:           batch.kubernetes.io/controller-uid=138c05e5-7c54-4632-84fb-9f64c244f418
+                  batch.kubernetes.io/job-name=verify-20261030-01
+                  controller-uid=138c05e5-7c54-4632-84fb-9f64c244f418
+                  job-name=verify-20261030-01
+                  lab-run=20261030-01
+Annotations:      <none>
+Status:           Succeeded
+IP:               10.244.0.26
+IPs:
+  IP:           10.244.0.26
+Controlled By:  Job/verify-20261030-01
+Containers:
+  compute:
+    Container ID:  containerd://f5c6ce251a992ceca8a9ee5a4563132384eb37464bdb0fd884705d4477c62b1a
+    Image:         devops-mapreduce:k8s
+    Image ID:      docker.io/library/import-2026-10-30@sha256:249235475c2cb6aca6b34d5a45ff0191e609e8f3722ade5c17c71ad0a236d665
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      single
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Fri, 30 Oct 2026 17:10:13 +0300
+      Finished:     Fri, 30 Oct 2026 17:10:24 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  96Mi
+    Requests:
+      cpu:     250m
+      memory:  64Mi
+    Environment Variables from:
+      rustfs-auth  Secret  Optional: false
+    Environment:
+      RUSTFS_ENDPOINT:  http://rustfs:9000
+      RUN_PREFIX:       kubernetes/20261030-01/verify-20261030-01
+      PARTS:            3
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-zf29j (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-zf29j:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  15s   default-scheduler  Successfully assigned devops-compute/verify-20261030-01-9sqnd to devops-k8s-control-plane
+  Normal  Pulled     15s   kubelet            spec.containers{compute}: Container image "devops-mapreduce:k8s" already present on machine and can be accessed by the pod
+  Normal  Created    15s   kubelet            spec.containers{compute}: Container created
+  Normal  Started    15s   kubelet            spec.containers{compute}: Container started
+

@@ -1,0 +1,1595 @@
+{
+  "apiVersion": "v1",
+  "items": [
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:08Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "PersistentVolumeClaim",
+        "name": "disk0-rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "697",
+        "uid": "22304645-6f4a-4acb-953a-70b0edc8da72"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:08Z",
+      "message": "waiting for first consumer to be created before binding",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:08Z",
+        "name": "disk0-rustfs-0.18e35389d0e4e5e8",
+        "namespace": "devops-compute",
+        "resourceVersion": "701",
+        "uid": "8eace092-80dd-4462-a8c5-9b7a0cf42a93"
+      },
+      "reason": "WaitForFirstConsumer",
+      "reportingComponent": "persistentvolume-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "persistentvolume-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 2,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:08Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "PersistentVolumeClaim",
+        "name": "disk0-rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "715",
+        "uid": "22304645-6f4a-4acb-953a-70b0edc8da72"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:08Z",
+      "message": "Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:08Z",
+        "name": "disk0-rustfs-0.18e35389d408ef83",
+        "namespace": "devops-compute",
+        "resourceVersion": "723",
+        "uid": "d55676c6-a23d-465f-8874-a2c0a4f3e0d8"
+      },
+      "reason": "ExternalProvisioning",
+      "reportingComponent": "persistentvolume-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "persistentvolume-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:08Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "PersistentVolumeClaim",
+        "name": "disk0-rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "715",
+        "uid": "22304645-6f4a-4acb-953a-70b0edc8da72"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:08Z",
+      "message": "External provisioner is provisioning volume for claim \"devops-compute/disk0-rustfs-0\"",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:08Z",
+        "name": "disk0-rustfs-0.18e35389d4541e48",
+        "namespace": "devops-compute",
+        "resourceVersion": "722",
+        "uid": "2fa4f261-1829-4f29-95c5-0b9ef1434029"
+      },
+      "reason": "Provisioning",
+      "reportingComponent": "rancher.io/local-path_local-path-provisioner-67b778fdf6-6f5t9_c0c84165-ade1-4917-9cb7-1e1876c3163f",
+      "reportingInstance": "",
+      "source": {
+        "component": "rancher.io/local-path_local-path-provisioner-67b778fdf6-6f5t9_c0c84165-ade1-4917-9cb7-1e1876c3163f"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:13Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "PersistentVolumeClaim",
+        "name": "disk0-rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "715",
+        "uid": "22304645-6f4a-4acb-953a-70b0edc8da72"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:13Z",
+      "message": "Successfully provisioned volume pvc-22304645-6f4a-4acb-953a-70b0edc8da72",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:13Z",
+        "name": "disk0-rustfs-0.18e3538b0b33ce17",
+        "namespace": "devops-compute",
+        "resourceVersion": "782",
+        "uid": "abc9fcc9-2c15-41cc-b416-f8f81afb3649"
+      },
+      "reason": "ProvisioningSucceeded",
+      "reportingComponent": "rancher.io/local-path_local-path-provisioner-67b778fdf6-6f5t9_c0c84165-ade1-4917-9cb7-1e1876c3163f",
+      "reportingInstance": "",
+      "source": {
+        "component": "rancher.io/local-path_local-path-provisioner-67b778fdf6-6f5t9_c0c84165-ade1-4917-9cb7-1e1876c3163f"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:08Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "PersistentVolumeClaim",
+        "name": "disk1-rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "698",
+        "uid": "3283a7b4-9b91-4855-a12b-e042da44af72"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:08Z",
+      "message": "waiting for first consumer to be created before binding",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:08Z",
+        "name": "disk1-rustfs-0.18e35389d14845d0",
+        "namespace": "devops-compute",
+        "resourceVersion": "704",
+        "uid": "444768f7-eb30-438d-9b25-570f1c0986d3"
+      },
+      "reason": "WaitForFirstConsumer",
+      "reportingComponent": "persistentvolume-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "persistentvolume-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 2,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:08Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "PersistentVolumeClaim",
+        "name": "disk1-rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "717",
+        "uid": "3283a7b4-9b91-4855-a12b-e042da44af72"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:08Z",
+      "message": "Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:08Z",
+        "name": "disk1-rustfs-0.18e35389d491186b",
+        "namespace": "devops-compute",
+        "resourceVersion": "728",
+        "uid": "af42c47b-45e8-45e0-a11f-bb3157ad6820"
+      },
+      "reason": "ExternalProvisioning",
+      "reportingComponent": "persistentvolume-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "persistentvolume-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:08Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "PersistentVolumeClaim",
+        "name": "disk1-rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "717",
+        "uid": "3283a7b4-9b91-4855-a12b-e042da44af72"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:08Z",
+      "message": "External provisioner is provisioning volume for claim \"devops-compute/disk1-rustfs-0\"",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:08Z",
+        "name": "disk1-rustfs-0.18e35389d4cc7cd8",
+        "namespace": "devops-compute",
+        "resourceVersion": "725",
+        "uid": "ccb49522-34e2-4266-9e33-c26986d6ab30"
+      },
+      "reason": "Provisioning",
+      "reportingComponent": "rancher.io/local-path_local-path-provisioner-67b778fdf6-6f5t9_c0c84165-ade1-4917-9cb7-1e1876c3163f",
+      "reportingInstance": "",
+      "source": {
+        "component": "rancher.io/local-path_local-path-provisioner-67b778fdf6-6f5t9_c0c84165-ade1-4917-9cb7-1e1876c3163f"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:14Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "PersistentVolumeClaim",
+        "name": "disk1-rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "717",
+        "uid": "3283a7b4-9b91-4855-a12b-e042da44af72"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:14Z",
+      "message": "Successfully provisioned volume pvc-3283a7b4-9b91-4855-a12b-e042da44af72",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:14Z",
+        "name": "disk1-rustfs-0.18e3538b460bb8c3",
+        "namespace": "devops-compute",
+        "resourceVersion": "795",
+        "uid": "223b8a3d-2b7b-43fa-a80f-013a1b09fb1b"
+      },
+      "reason": "ProvisioningSucceeded",
+      "reportingComponent": "rancher.io/local-path_local-path-provisioner-67b778fdf6-6f5t9_c0c84165-ade1-4917-9cb7-1e1876c3163f",
+      "reportingInstance": "",
+      "source": {
+        "component": "rancher.io/local-path_local-path-provisioner-67b778fdf6-6f5t9_c0c84165-ade1-4917-9cb7-1e1876c3163f"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:08Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "PersistentVolumeClaim",
+        "name": "disk2-rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "700",
+        "uid": "f4db9533-41dd-4cc0-a703-b1912bf0d13a"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:08Z",
+      "message": "waiting for first consumer to be created before binding",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:08Z",
+        "name": "disk2-rustfs-0.18e35389d1a48ee2",
+        "namespace": "devops-compute",
+        "resourceVersion": "706",
+        "uid": "5883a56c-4175-481b-9bf0-59b9268de9cb"
+      },
+      "reason": "WaitForFirstConsumer",
+      "reportingComponent": "persistentvolume-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "persistentvolume-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:08Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "PersistentVolumeClaim",
+        "name": "disk2-rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "719",
+        "uid": "f4db9533-41dd-4cc0-a703-b1912bf0d13a"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:08Z",
+      "message": "Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:08Z",
+        "name": "disk2-rustfs-0.18e35389d4c0e3ee",
+        "namespace": "devops-compute",
+        "resourceVersion": "729",
+        "uid": "67800e22-d393-4853-a71f-b0dfc435b3c2"
+      },
+      "reason": "ExternalProvisioning",
+      "reportingComponent": "persistentvolume-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "persistentvolume-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:08Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "PersistentVolumeClaim",
+        "name": "disk2-rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "719",
+        "uid": "f4db9533-41dd-4cc0-a703-b1912bf0d13a"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:08Z",
+      "message": "External provisioner is provisioning volume for claim \"devops-compute/disk2-rustfs-0\"",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:08Z",
+        "name": "disk2-rustfs-0.18e35389d4e84120",
+        "namespace": "devops-compute",
+        "resourceVersion": "727",
+        "uid": "d54f4c76-2794-411b-ba9b-a2114c12d362"
+      },
+      "reason": "Provisioning",
+      "reportingComponent": "rancher.io/local-path_local-path-provisioner-67b778fdf6-6f5t9_c0c84165-ade1-4917-9cb7-1e1876c3163f",
+      "reportingInstance": "",
+      "source": {
+        "component": "rancher.io/local-path_local-path-provisioner-67b778fdf6-6f5t9_c0c84165-ade1-4917-9cb7-1e1876c3163f"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:11Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "PersistentVolumeClaim",
+        "name": "disk2-rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "719",
+        "uid": "f4db9533-41dd-4cc0-a703-b1912bf0d13a"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:11Z",
+      "message": "Successfully provisioned volume pvc-f4db9533-41dd-4cc0-a703-b1912bf0d13a",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:11Z",
+        "name": "disk2-rustfs-0.18e3538aaf998328",
+        "namespace": "devops-compute",
+        "resourceVersion": "770",
+        "uid": "5138d973-1165-4477-93b6-02a1ddaff0b1"
+      },
+      "reason": "ProvisioningSucceeded",
+      "reportingComponent": "rancher.io/local-path_local-path-provisioner-67b778fdf6-6f5t9_c0c84165-ade1-4917-9cb7-1e1876c3163f",
+      "reportingInstance": "",
+      "source": {
+        "component": "rancher.io/local-path_local-path-provisioner-67b778fdf6-6f5t9_c0c84165-ade1-4917-9cb7-1e1876c3163f"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:08Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "PersistentVolumeClaim",
+        "name": "disk3-rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "703",
+        "uid": "21b30a7c-c83c-4bc5-aa79-afb0248d4fda"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:08Z",
+      "message": "waiting for first consumer to be created before binding",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:08Z",
+        "name": "disk3-rustfs-0.18e35389d21fcd63",
+        "namespace": "devops-compute",
+        "resourceVersion": "708",
+        "uid": "77feb007-e62f-4c50-8e63-b3acdd59d769"
+      },
+      "reason": "WaitForFirstConsumer",
+      "reportingComponent": "persistentvolume-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "persistentvolume-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:08Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "PersistentVolumeClaim",
+        "name": "disk3-rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "724",
+        "uid": "21b30a7c-c83c-4bc5-aa79-afb0248d4fda"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:08Z",
+      "message": "Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:08Z",
+        "name": "disk3-rustfs-0.18e35389d55d1316",
+        "namespace": "devops-compute",
+        "resourceVersion": "730",
+        "uid": "f20bf50d-9016-4aa2-9dc1-0df24698a6ba"
+      },
+      "reason": "ExternalProvisioning",
+      "reportingComponent": "persistentvolume-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "persistentvolume-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:08Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "PersistentVolumeClaim",
+        "name": "disk3-rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "724",
+        "uid": "21b30a7c-c83c-4bc5-aa79-afb0248d4fda"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:08Z",
+      "message": "External provisioner is provisioning volume for claim \"devops-compute/disk3-rustfs-0\"",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:08Z",
+        "name": "disk3-rustfs-0.18e35389d5797dcb",
+        "namespace": "devops-compute",
+        "resourceVersion": "741",
+        "uid": "2ce69140-0055-41a4-8c48-f2a227381be4"
+      },
+      "reason": "Provisioning",
+      "reportingComponent": "rancher.io/local-path_local-path-provisioner-67b778fdf6-6f5t9_c0c84165-ade1-4917-9cb7-1e1876c3163f",
+      "reportingInstance": "",
+      "source": {
+        "component": "rancher.io/local-path_local-path-provisioner-67b778fdf6-6f5t9_c0c84165-ade1-4917-9cb7-1e1876c3163f"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:14Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "PersistentVolumeClaim",
+        "name": "disk3-rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "724",
+        "uid": "21b30a7c-c83c-4bc5-aa79-afb0248d4fda"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:14Z",
+      "message": "Successfully provisioned volume pvc-21b30a7c-c83c-4bc5-aa79-afb0248d4fda",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:14Z",
+        "name": "disk3-rustfs-0.18e3538b51ed6afe",
+        "namespace": "devops-compute",
+        "resourceVersion": "796",
+        "uid": "963af41f-719b-4359-8cc1-ade63365ddb6"
+      },
+      "reason": "ProvisioningSucceeded",
+      "reportingComponent": "rancher.io/local-path_local-path-provisioner-67b778fdf6-6f5t9_c0c84165-ade1-4917-9cb7-1e1876c3163f",
+      "reportingInstance": "",
+      "source": {
+        "component": "rancher.io/local-path_local-path-provisioner-67b778fdf6-6f5t9_c0c84165-ade1-4917-9cb7-1e1876c3163f"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:06:41Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{compute}",
+        "kind": "Pod",
+        "name": "measure-20261030-01-jjxcg",
+        "namespace": "devops-compute",
+        "resourceVersion": "1240",
+        "uid": "2c41f764-c45b-40c3-bf10-bc7c363f5dc7"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:06:41Z",
+      "message": "Container image \"devops-mapreduce:k8s\" already present on machine and can be accessed by the pod",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:06:41Z",
+        "name": "measure-20261030-01-jjxcg.18e353c994b9b767",
+        "namespace": "devops-compute",
+        "resourceVersion": "1246",
+        "uid": "a81ef049-df21-4614-bd2c-b588997b6dba"
+      },
+      "reason": "Pulled",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:06:41Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{compute}",
+        "kind": "Pod",
+        "name": "measure-20261030-01-jjxcg",
+        "namespace": "devops-compute",
+        "resourceVersion": "1240",
+        "uid": "2c41f764-c45b-40c3-bf10-bc7c363f5dc7"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:06:41Z",
+      "message": "Container created",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:06:41Z",
+        "name": "measure-20261030-01-jjxcg.18e353c996619594",
+        "namespace": "devops-compute",
+        "resourceVersion": "1247",
+        "uid": "7a467b87-cc14-4254-94f7-eebb22b1c17e"
+      },
+      "reason": "Created",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:06:42Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{compute}",
+        "kind": "Pod",
+        "name": "measure-20261030-01-jjxcg",
+        "namespace": "devops-compute",
+        "resourceVersion": "1240",
+        "uid": "2c41f764-c45b-40c3-bf10-bc7c363f5dc7"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:06:42Z",
+      "message": "Container started",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:06:42Z",
+        "name": "measure-20261030-01-jjxcg.18e353c99cc9ba3e",
+        "namespace": "devops-compute",
+        "resourceVersion": "1248",
+        "uid": "c3d95bd6-b366-431e-9a79-ce6e88e75128"
+      },
+      "reason": "Started",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:06:42Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "name": "measure-20261030-01-jjxcg",
+        "namespace": "devops-compute",
+        "resourceVersion": "1239",
+        "uid": "2c41f764-c45b-40c3-bf10-bc7c363f5dc7"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:06:42Z",
+      "message": "Successfully assigned devops-compute/measure-20261030-01-jjxcg to devops-k8s-control-plane",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:06:41Z",
+        "name": "measure-20261030-01-jjxcg.18e353c9b4119a5f",
+        "namespace": "devops-compute",
+        "resourceVersion": "1243",
+        "uid": "d31255cf-e0a1-498c-a7e8-b008f9ed6967"
+      },
+      "reason": "Scheduled",
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": "",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:06:42Z",
+      "involvedObject": {
+        "apiVersion": "batch/v1",
+        "kind": "Job",
+        "name": "measure-20261030-01",
+        "namespace": "devops-compute",
+        "resourceVersion": "1238",
+        "uid": "1450959c-26f2-4fae-843e-dfd67be83aff"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:06:42Z",
+      "message": "Created pod: measure-20261030-01-jjxcg",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:06:42Z",
+        "name": "measure-20261030-01.18e353c9b3b238dd",
+        "namespace": "devops-compute",
+        "resourceVersion": "1242",
+        "uid": "12cc3d53-c231-4ca8-9ee8-3f62e2a91659"
+      },
+      "reason": "SuccessfulCreate",
+      "reportingComponent": "job-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "job-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:06:54Z",
+      "involvedObject": {
+        "apiVersion": "batch/v1",
+        "kind": "Job",
+        "name": "measure-20261030-01",
+        "namespace": "devops-compute",
+        "resourceVersion": "1271",
+        "uid": "1450959c-26f2-4fae-843e-dfd67be83aff"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:06:54Z",
+      "message": "Job completed",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:06:55Z",
+        "name": "measure-20261030-01.18e353cca324553f",
+        "namespace": "devops-compute",
+        "resourceVersion": "1274",
+        "uid": "3d01d115-fe3e-48f6-90c9-b7acdc43f375"
+      },
+      "reason": "Completed",
+      "reportingComponent": "job-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "job-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:06:57Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "name": "oom-20261030-01-g9l25",
+        "namespace": "devops-compute",
+        "resourceVersion": "1278",
+        "uid": "e2f934af-e6c8-4701-83ec-6e975771494a"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:06:57Z",
+      "message": "Successfully assigned devops-compute/oom-20261030-01-g9l25 to devops-k8s-control-plane",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:06:57Z",
+        "name": "oom-20261030-01-g9l25.18e353cd414d0c31",
+        "namespace": "devops-compute",
+        "resourceVersion": "1282",
+        "uid": "41570fd8-797b-4796-9b21-3ae6d2cbbe6e"
+      },
+      "reason": "Scheduled",
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": "",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:06:58Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{compute}",
+        "kind": "Pod",
+        "name": "oom-20261030-01-g9l25",
+        "namespace": "devops-compute",
+        "resourceVersion": "1279",
+        "uid": "e2f934af-e6c8-4701-83ec-6e975771494a"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:06:58Z",
+      "message": "Container image \"devops-mapreduce:k8s\" already present on machine and can be accessed by the pod",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:06:58Z",
+        "name": "oom-20261030-01-g9l25.18e353cd603d61ac",
+        "namespace": "devops-compute",
+        "resourceVersion": "1285",
+        "uid": "0abba7c4-dcfe-46a1-8178-cd7991e921fd"
+      },
+      "reason": "Pulled",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:06:58Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{compute}",
+        "kind": "Pod",
+        "name": "oom-20261030-01-g9l25",
+        "namespace": "devops-compute",
+        "resourceVersion": "1279",
+        "uid": "e2f934af-e6c8-4701-83ec-6e975771494a"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:06:58Z",
+      "message": "Container created",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:06:58Z",
+        "name": "oom-20261030-01-g9l25.18e353cd62c1d752",
+        "namespace": "devops-compute",
+        "resourceVersion": "1286",
+        "uid": "c7e3df41-bf2d-4055-888a-c1de18e6edd9"
+      },
+      "reason": "Created",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:06:58Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{compute}",
+        "kind": "Pod",
+        "name": "oom-20261030-01-g9l25",
+        "namespace": "devops-compute",
+        "resourceVersion": "1279",
+        "uid": "e2f934af-e6c8-4701-83ec-6e975771494a"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:06:58Z",
+      "message": "Container started",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:06:58Z",
+        "name": "oom-20261030-01-g9l25.18e353cd6b32251d",
+        "namespace": "devops-compute",
+        "resourceVersion": "1289",
+        "uid": "da813b5c-6e19-47ee-b299-c2bbb3e5938a"
+      },
+      "reason": "Started",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:06:57Z",
+      "involvedObject": {
+        "apiVersion": "batch/v1",
+        "kind": "Job",
+        "name": "oom-20261030-01",
+        "namespace": "devops-compute",
+        "resourceVersion": "1277",
+        "uid": "63f15d19-7bef-4327-b49e-221cdab637b7"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:06:57Z",
+      "message": "Created pod: oom-20261030-01-g9l25",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:06:57Z",
+        "name": "oom-20261030-01.18e353cd40eefe9d",
+        "namespace": "devops-compute",
+        "resourceVersion": "1280",
+        "uid": "c6369599-37e1-49b3-a2a1-7ef145a6efa1"
+      },
+      "reason": "SuccessfulCreate",
+      "reportingComponent": "job-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "job-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:07:01Z",
+      "involvedObject": {
+        "apiVersion": "batch/v1",
+        "kind": "Job",
+        "name": "oom-20261030-01",
+        "namespace": "devops-compute",
+        "resourceVersion": "1295",
+        "uid": "63f15d19-7bef-4327-b49e-221cdab637b7"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:07:01Z",
+      "message": "Job has reached the specified backoff limit",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:07:01Z",
+        "name": "oom-20261030-01.18e353ce12d5bec5",
+        "namespace": "devops-compute",
+        "resourceVersion": "1298",
+        "uid": "c7df67ff-20e8-481c-8cd2-4414d21403af"
+      },
+      "reason": "BackoffLimitExceeded",
+      "reportingComponent": "job-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "job-controller"
+      },
+      "type": "Warning"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:15Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "name": "rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "707",
+        "uid": "5e5d51dd-45bb-4f37-b0f9-1a8e77184d2f"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:15Z",
+      "message": "Successfully assigned devops-compute/rustfs-0 to devops-k8s-control-plane",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:15Z",
+        "name": "rustfs-0.18e3538b7688bcf4",
+        "namespace": "devops-compute",
+        "resourceVersion": "798",
+        "uid": "600a8427-fccc-44d8-92f3-7b25712eadb2"
+      },
+      "reason": "Scheduled",
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": "",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:15Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{rustfs}",
+        "kind": "Pod",
+        "name": "rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "797",
+        "uid": "5e5d51dd-45bb-4f37-b0f9-1a8e77184d2f"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:15Z",
+      "message": "Pulling image \"rustfs/rustfs:1.0.0\"",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:15Z",
+        "name": "rustfs-0.18e3538b96c74043",
+        "namespace": "devops-compute",
+        "resourceVersion": "801",
+        "uid": "2bfc7d2b-d8a1-476b-939f-21c884ac37c8"
+      },
+      "reason": "Pulling",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:35Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{rustfs}",
+        "kind": "Pod",
+        "name": "rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "797",
+        "uid": "5e5d51dd-45bb-4f37-b0f9-1a8e77184d2f"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:35Z",
+      "message": "Successfully pulled image \"rustfs/rustfs:1.0.0\" in 21.44s (21.44s including waiting). Image size: 109669715 bytes.",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:35Z",
+        "name": "rustfs-0.18e353904f91eeee",
+        "namespace": "devops-compute",
+        "resourceVersion": "830",
+        "uid": "fd9a7c9b-caa3-4d78-9642-7c12ba5177b1"
+      },
+      "reason": "Pulled",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 6,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:35Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{rustfs}",
+        "kind": "Pod",
+        "name": "rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "797",
+        "uid": "5e5d51dd-45bb-4f37-b0f9-1a8e77184d2f"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:05:34Z",
+      "message": "Container created",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:35Z",
+        "name": "rustfs-0.18e3539052fff978",
+        "namespace": "devops-compute",
+        "resourceVersion": "1115",
+        "uid": "fcb0936c-2e2c-4ab8-9d49-969895d1b614"
+      },
+      "reason": "Created",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 6,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:36Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{rustfs}",
+        "kind": "Pod",
+        "name": "rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "797",
+        "uid": "5e5d51dd-45bb-4f37-b0f9-1a8e77184d2f"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:05:34Z",
+      "message": "Container started",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:36Z",
+        "name": "rustfs-0.18e353905e3b88f9",
+        "namespace": "devops-compute",
+        "resourceVersion": "1116",
+        "uid": "5b0b2bdb-b7fe-43fa-9cd0-caa482422d35"
+      },
+      "reason": "Started",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 5,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:37Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{rustfs}",
+        "kind": "Pod",
+        "name": "rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "797",
+        "uid": "5e5d51dd-45bb-4f37-b0f9-1a8e77184d2f"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:05:34Z",
+      "message": "Container image \"rustfs/rustfs:1.0.0\" already present on machine and can be accessed by the pod",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:37Z",
+        "name": "rustfs-0.18e353909e028f73",
+        "namespace": "devops-compute",
+        "resourceVersion": "1114",
+        "uid": "cffb4f06-fa20-4ea2-b299-010c9ab1a146"
+      },
+      "reason": "Pulled",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 14,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:38Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{rustfs}",
+        "kind": "Pod",
+        "name": "rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "797",
+        "uid": "5e5d51dd-45bb-4f37-b0f9-1a8e77184d2f"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:05:37Z",
+      "message": "Back-off restarting failed container rustfs in pod rustfs-0_devops-compute(5e5d51dd-45bb-4f37-b0f9-1a8e77184d2f)",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:38Z",
+        "name": "rustfs-0.18e35390da4f320c",
+        "namespace": "devops-compute",
+        "resourceVersion": "1121",
+        "uid": "04797ceb-1ff4-4c5e-9fa3-b7dbc8f52021"
+      },
+      "reason": "BackOff",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Warning"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:05:41Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "name": "rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "1139",
+        "uid": "b1801b0f-f7da-4296-a432-482bd1c29a5c"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:05:41Z",
+      "message": "Successfully assigned devops-compute/rustfs-0 to devops-k8s-control-plane",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:05:41Z",
+        "name": "rustfs-0.18e353bb8f41feaa",
+        "namespace": "devops-compute",
+        "resourceVersion": "1143",
+        "uid": "bc1eec39-57ec-4320-8780-daf1a0b3681d"
+      },
+      "reason": "Scheduled",
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": "",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:05:42Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{rustfs}",
+        "kind": "Pod",
+        "name": "rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "1140",
+        "uid": "b1801b0f-f7da-4296-a432-482bd1c29a5c"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:05:42Z",
+      "message": "Container image \"rustfs/rustfs:1.0.0\" already present on machine and can be accessed by the pod",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:05:42Z",
+        "name": "rustfs-0.18e353bbaeda72d1",
+        "namespace": "devops-compute",
+        "resourceVersion": "1146",
+        "uid": "9211055c-6fb9-4601-87d8-c175bf5be398"
+      },
+      "reason": "Pulled",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:05:42Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{rustfs}",
+        "kind": "Pod",
+        "name": "rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "1140",
+        "uid": "b1801b0f-f7da-4296-a432-482bd1c29a5c"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:05:42Z",
+      "message": "Container created",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:05:42Z",
+        "name": "rustfs-0.18e353bbb0ee43c9",
+        "namespace": "devops-compute",
+        "resourceVersion": "1147",
+        "uid": "5ac9795a-1c8e-4fd0-831b-94bff0924efa"
+      },
+      "reason": "Created",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:05:42Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{rustfs}",
+        "kind": "Pod",
+        "name": "rustfs-0",
+        "namespace": "devops-compute",
+        "resourceVersion": "1140",
+        "uid": "b1801b0f-f7da-4296-a432-482bd1c29a5c"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:05:42Z",
+      "message": "Container started",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:05:42Z",
+        "name": "rustfs-0.18e353bbb8855ca8",
+        "namespace": "devops-compute",
+        "resourceVersion": "1148",
+        "uid": "f9e7317a-e486-404f-a281-facf60c37b9c"
+      },
+      "reason": "Started",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:08Z",
+      "involvedObject": {
+        "apiVersion": "apps/v1",
+        "kind": "StatefulSet",
+        "name": "rustfs",
+        "namespace": "devops-compute",
+        "resourceVersion": "695",
+        "uid": "8480e436-ce9b-4f73-ba7f-44a02bb6e271"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:08Z",
+      "message": "Create Claim disk0-rustfs-0 Pod rustfs-0 in StatefulSet rustfs success",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:08Z",
+        "name": "rustfs.18e35389d0e11ffe",
+        "namespace": "devops-compute",
+        "resourceVersion": "699",
+        "uid": "ac1bea33-258c-47f7-9dbe-3e7bbf9aab73"
+      },
+      "reason": "SuccessfulCreate",
+      "reportingComponent": "statefulset-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "statefulset-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:08Z",
+      "involvedObject": {
+        "apiVersion": "apps/v1",
+        "kind": "StatefulSet",
+        "name": "rustfs",
+        "namespace": "devops-compute",
+        "resourceVersion": "695",
+        "uid": "8480e436-ce9b-4f73-ba7f-44a02bb6e271"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:08Z",
+      "message": "Create Claim disk1-rustfs-0 Pod rustfs-0 in StatefulSet rustfs success",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:08Z",
+        "name": "rustfs.18e35389d14b9d56",
+        "namespace": "devops-compute",
+        "resourceVersion": "702",
+        "uid": "8f61aca8-a48d-427d-981c-568dad4fb79a"
+      },
+      "reason": "SuccessfulCreate",
+      "reportingComponent": "statefulset-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "statefulset-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:08Z",
+      "involvedObject": {
+        "apiVersion": "apps/v1",
+        "kind": "StatefulSet",
+        "name": "rustfs",
+        "namespace": "devops-compute",
+        "resourceVersion": "695",
+        "uid": "8480e436-ce9b-4f73-ba7f-44a02bb6e271"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:08Z",
+      "message": "Create Claim disk2-rustfs-0 Pod rustfs-0 in StatefulSet rustfs success",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:08Z",
+        "name": "rustfs.18e35389d1a3277c",
+        "namespace": "devops-compute",
+        "resourceVersion": "705",
+        "uid": "c5fd70c0-ae43-40ac-8464-f3b479adac89"
+      },
+      "reason": "SuccessfulCreate",
+      "reportingComponent": "statefulset-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "statefulset-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:08Z",
+      "involvedObject": {
+        "apiVersion": "apps/v1",
+        "kind": "StatefulSet",
+        "name": "rustfs",
+        "namespace": "devops-compute",
+        "resourceVersion": "695",
+        "uid": "8480e436-ce9b-4f73-ba7f-44a02bb6e271"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:02:08Z",
+      "message": "Create Claim disk3-rustfs-0 Pod rustfs-0 in StatefulSet rustfs success",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:08Z",
+        "name": "rustfs.18e35389d2250930",
+        "namespace": "devops-compute",
+        "resourceVersion": "709",
+        "uid": "1c5363b9-5fb4-4b6c-a597-9fee7e43b450"
+      },
+      "reason": "SuccessfulCreate",
+      "reportingComponent": "statefulset-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "statefulset-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 2,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:02:08Z",
+      "involvedObject": {
+        "apiVersion": "apps/v1",
+        "kind": "StatefulSet",
+        "name": "rustfs",
+        "namespace": "devops-compute",
+        "resourceVersion": "695",
+        "uid": "8480e436-ce9b-4f73-ba7f-44a02bb6e271"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:05:41Z",
+      "message": "Create Pod rustfs-0 in StatefulSet rustfs successful",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:02:08Z",
+        "name": "rustfs.18e35389d29518ed",
+        "namespace": "devops-compute",
+        "resourceVersion": "1141",
+        "uid": "749ed703-71d4-46a5-855a-8e105f38f40d"
+      },
+      "reason": "SuccessfulCreate",
+      "reportingComponent": "statefulset-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "statefulset-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:07:02Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "kind": "Pod",
+        "name": "safe-20261030-01-2fnqx",
+        "namespace": "devops-compute",
+        "resourceVersion": "1303",
+        "uid": "2abbde93-e827-40b2-9358-ce466d746eab"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:07:02Z",
+      "message": "Successfully assigned devops-compute/safe-20261030-01-2fnqx to devops-k8s-control-plane",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:07:02Z",
+        "name": "safe-20261030-01-2fnqx.18e353ce77f721d6",
+        "namespace": "devops-compute",
+        "resourceVersion": "1307",
+        "uid": "e40171fe-6432-4f4e-8239-ae50790eefad"
+      },
+      "reason": "Scheduled",
+      "reportingComponent": "default-scheduler",
+      "reportingInstance": "",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:07:03Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{compute}",
+        "kind": "Pod",
+        "name": "safe-20261030-01-2fnqx",
+        "namespace": "devops-compute",
+        "resourceVersion": "1304",
+        "uid": "2abbde93-e827-40b2-9358-ce466d746eab"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:07:03Z",
+      "message": "Container image \"devops-mapreduce:k8s\" already present on machine and can be accessed by the pod",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:07:03Z",
+        "name": "safe-20261030-01-2fnqx.18e353ce96f08386",
+        "namespace": "devops-compute",
+        "resourceVersion": "1309",
+        "uid": "2de8c884-08c4-48b6-acee-5b3971b96a30"
+      },
+      "reason": "Pulled",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:07:03Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{compute}",
+        "kind": "Pod",
+        "name": "safe-20261030-01-2fnqx",
+        "namespace": "devops-compute",
+        "resourceVersion": "1304",
+        "uid": "2abbde93-e827-40b2-9358-ce466d746eab"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:07:03Z",
+      "message": "Container created",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:07:03Z",
+        "name": "safe-20261030-01-2fnqx.18e353ce989248be",
+        "namespace": "devops-compute",
+        "resourceVersion": "1310",
+        "uid": "43e19ade-dd50-4b52-9f25-94523250e9a6"
+      },
+      "reason": "Created",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:07:03Z",
+      "involvedObject": {
+        "apiVersion": "v1",
+        "fieldPath": "spec.containers{compute}",
+        "kind": "Pod",
+        "name": "safe-20261030-01-2fnqx",
+        "namespace": "devops-compute",
+        "resourceVersion": "1304",
+        "uid": "2abbde93-e827-40b2-9358-ce466d746eab"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:07:03Z",
+      "message": "Container started",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:07:03Z",
+        "name": "safe-20261030-01-2fnqx.18e353ce9f42f064",
+        "namespace": "devops-compute",
+        "resourceVersion": "1311",
+        "uid": "f3adda07-4269-4bac-a083-4711b59ba462"
+      },
+      "reason": "Started",
+      "reportingComponent": "kubelet",
+      "reportingInstance": "devops-k8s-control-plane",
+      "source": {
+        "component": "kubelet",
+        "host": "devops-k8s-control-plane"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:07:02Z",
+      "involvedObject": {
+        "apiVersion": "batch/v1",
+        "kind": "Job",
+        "name": "safe-20261030-01",
+        "namespace": "devops-compute",
+        "resourceVersion": "1302",
+        "uid": "a8b36c82-f46e-41e4-a421-03d0824a6070"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:07:02Z",
+      "message": "Created pod: safe-20261030-01-2fnqx",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:07:02Z",
+        "name": "safe-20261030-01.18e353ce779718c0",
+        "namespace": "devops-compute",
+        "resourceVersion": "1305",
+        "uid": "b7d26ca1-69f3-425c-adfb-ca06a8a7c92c"
+      },
+      "reason": "SuccessfulCreate",
+      "reportingComponent": "job-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "job-controller"
+      },
+      "type": "Normal"
+    },
+    {
+      "apiVersion": "v1",
+      "count": 1,
+      "eventTime": null,
+      "firstTimestamp": "2026-10-30T14:07:14Z",
+      "involvedObject": {
+        "apiVersion": "batch/v1",
+        "kind": "Job",
+        "name": "safe-20261030-01",
+        "namespace": "devops-compute",
+        "resourceVersion": "1332",
+        "uid": "a8b36c82-f46e-41e4-a421-03d0824a6070"
+      },
+      "kind": "Event",
+      "lastTimestamp": "2026-10-30T14:07:14Z",
+      "message": "Job completed",
+      "metadata": {
+        "creationTimestamp": "2026-10-30T14:07:14Z",
+        "name": "safe-20261030-01.18e353d13902d56e",
+        "namespace": "devops-compute",
+        "resourceVersion": "1335",
+        "uid": "73fe2a95-5824-4238-b863-b2a7b257eab6"
+      },
+      "reason": "Completed",
+      "reportingComponent": "job-controller",
+      "reportingInstance": "",
+      "source": {
+        "component": "job-controller"
+      },
+      "type": "Normal"
+    }
+  ],
+  "kind": "List",
+  "metadata": {
+    "resourceVersion": ""
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "admission_rejection": true,
+  "rejected_pod_absent": true,
+  "same_spec_admitted_after_release": true
+}

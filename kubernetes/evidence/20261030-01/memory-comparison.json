@@ -1,0 +1,10 @@
+{
+  "initial_limit_mib": 256,
+  "measured_peak_mib": 56.14453125,
+  "oom_limit_mib": 28,
+  "chosen_limit_mib": 96,
+  "headroom_factor": 1.5,
+  "safe_peak_mib": 56.02734375,
+  "historical_windows_peak_mib": 87.97,
+  "comparison_note": "HW3 global counts retain singles+pairs+triples; adapter retains global pairs and temporary original mapper counters. Different workloads and metrics."
+}

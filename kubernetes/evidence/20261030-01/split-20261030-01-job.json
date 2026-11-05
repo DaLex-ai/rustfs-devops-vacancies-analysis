@@ -1,0 +1,132 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"batch/v1\",\"kind\":\"Job\",\"metadata\":{\"annotations\":{},\"name\":\"split-20261030-01\",\"namespace\":\"devops-compute\"},\"spec\":{\"activeDeadlineSeconds\":600,\"backoffLimit\":0,\"template\":{\"metadata\":{\"labels\":{\"lab-run\":\"20261030-01\"}},\"spec\":{\"containers\":[{\"args\":[\"split\"],\"env\":[{\"name\":\"RUSTFS_ENDPOINT\",\"value\":\"http://rustfs:9000\"},{\"name\":\"RUN_PREFIX\",\"value\":\"kubernetes/20261030-01/parallel\"},{\"name\":\"PARTS\",\"value\":\"3\"}],\"envFrom\":[{\"secretRef\":{\"name\":\"rustfs-auth\"}}],\"image\":\"devops-mapreduce:k8s\",\"imagePullPolicy\":\"Never\",\"name\":\"compute\",\"resources\":{\"limits\":{\"cpu\":\"1\",\"memory\":\"1Gi\"},\"requests\":{\"cpu\":\"250m\",\"memory\":\"128Mi\"}},\"securityContext\":{\"allowPrivilegeEscalation\":false,\"capabilities\":{\"drop\":[\"ALL\"]}}}],\"restartPolicy\":\"Never\"}}}}\n"
+    },
+    "creationTimestamp": "2026-10-30T14:07:15Z",
+    "generation": 1,
+    "labels": {
+      "batch.kubernetes.io/controller-uid": "5e30f8a8-0ea7-4c0e-ae31-e428fa8961b6",
+      "batch.kubernetes.io/job-name": "split-20261030-01",
+      "controller-uid": "5e30f8a8-0ea7-4c0e-ae31-e428fa8961b6",
+      "job-name": "split-20261030-01",
+      "lab-run": "20261030-01"
+    },
+    "name": "split-20261030-01",
+    "namespace": "devops-compute",
+    "resourceVersion": "1419",
+    "uid": "5e30f8a8-0ea7-4c0e-ae31-e428fa8961b6"
+  },
+  "spec": {
+    "activeDeadlineSeconds": 600,
+    "backoffLimit": 0,
+    "completionMode": "NonIndexed",
+    "completions": 1,
+    "manualSelector": false,
+    "parallelism": 1,
+    "podReplacementPolicy": "TerminatingOrFailed",
+    "selector": {
+      "matchLabels": {
+        "batch.kubernetes.io/controller-uid": "5e30f8a8-0ea7-4c0e-ae31-e428fa8961b6"
+      }
+    },
+    "suspend": false,
+    "template": {
+      "metadata": {
+        "labels": {
+          "batch.kubernetes.io/controller-uid": "5e30f8a8-0ea7-4c0e-ae31-e428fa8961b6",
+          "batch.kubernetes.io/job-name": "split-20261030-01",
+          "controller-uid": "5e30f8a8-0ea7-4c0e-ae31-e428fa8961b6",
+          "job-name": "split-20261030-01",
+          "lab-run": "20261030-01"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "args": [
+              "split"
+            ],
+            "env": [
+              {
+                "name": "RUSTFS_ENDPOINT",
+                "value": "http://rustfs:9000"
+              },
+              {
+                "name": "RUN_PREFIX",
+                "value": "kubernetes/20261030-01/parallel"
+              },
+              {
+                "name": "PARTS",
+                "value": "3"
+              }
+            ],
+            "envFrom": [
+              {
+                "secretRef": {
+                  "name": "rustfs-auth"
+                }
+              }
+            ],
+            "image": "devops-mapreduce:k8s",
+            "imagePullPolicy": "Never",
+            "name": "compute",
+            "resources": {
+              "limits": {
+                "cpu": "1",
+                "memory": "1Gi"
+              },
+              "requests": {
+                "cpu": "250m",
+                "memory": "128Mi"
+              }
+            },
+            "securityContext": {
+              "allowPrivilegeEscalation": false,
+              "capabilities": {
+                "drop": [
+                  "ALL"
+                ]
+              }
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File"
+          }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "restartPolicy": "Never",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "terminationGracePeriodSeconds": 30
+      }
+    }
+  },
+  "status": {
+    "completionTime": "2026-10-30T14:08:03Z",
+    "conditions": [
+      {
+        "lastProbeTime": "2026-10-30T14:08:03Z",
+        "lastTransitionTime": "2026-10-30T14:08:03Z",
+        "message": "Reached expected number of succeeded pods",
+        "reason": "CompletionsReached",
+        "status": "True",
+        "type": "SuccessCriteriaMet"
+      },
+      {
+        "lastProbeTime": "2026-10-30T14:08:03Z",
+        "lastTransitionTime": "2026-10-30T14:08:03Z",
+        "message": "Reached expected number of succeeded pods",
+        "reason": "CompletionsReached",
+        "status": "True",
+        "type": "Complete"
+      }
+    ],
+    "ready": 0,
+    "startTime": "2026-10-30T14:07:15Z",
+    "succeeded": 1,
+    "terminating": 0,
+    "uncountedTerminatedPods": {}
+  }
+}

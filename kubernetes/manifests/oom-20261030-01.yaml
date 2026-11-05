@@ -1,0 +1,71 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "name": "oom-20261030-01",
+    "namespace": "devops-compute"
+  },
+  "spec": {
+    "backoffLimit": 0,
+    "activeDeadlineSeconds": 600,
+    "template": {
+      "metadata": {
+        "labels": {
+          "lab-run": "20261030-01"
+        }
+      },
+      "spec": {
+        "restartPolicy": "Never",
+        "containers": [
+          {
+            "name": "compute",
+            "image": "devops-mapreduce:k8s",
+            "imagePullPolicy": "Never",
+            "args": [
+              "single"
+            ],
+            "env": [
+              {
+                "name": "RUSTFS_ENDPOINT",
+                "value": "http://rustfs:9000"
+              },
+              {
+                "name": "RUN_PREFIX",
+                "value": "kubernetes/20261030-01/oom-20261030-01"
+              },
+              {
+                "name": "PARTS",
+                "value": "3"
+              }
+            ],
+            "envFrom": [
+              {
+                "secretRef": {
+                  "name": "rustfs-auth"
+                }
+              }
+            ],
+            "resources": {
+              "requests": {
+                "cpu": "250m",
+                "memory": "16Mi"
+              },
+              "limits": {
+                "cpu": "1",
+                "memory": "28Mi"
+              }
+            },
+            "securityContext": {
+              "allowPrivilegeEscalation": false,
+              "capabilities": {
+                "drop": [
+                  "ALL"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
